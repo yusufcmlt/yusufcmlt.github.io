@@ -1,0 +1,118 @@
+.contact-page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 35px;
+    margin: 50px 0 0 20px;
+  }
+  .contact-form-container {
+    width: 90%;
+    height: 70%;
+    background-color: rgb(246, 245, 245);
+    border-radius: 10px 0 0 10px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.253);
+    .contact-form-sidebar {
+      height: 100%;
+      width: 300px;
+      background-color: #3828a1;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: white;
+        font-size: 25px;
+        padding: 15px;
+      }
+      p {
+        color: #afabcc;
+        font-size: 15px;
+        padding: 15px;
+        font-weight: 600;
+      }
+      .contact-links-container {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        .contact-link {
+          width: 120px;
+          height: 120px;
+          margin: 5px;
+          border-radius: 5px;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 1px 4px 1px 1px rgb(0, 0, 0);
+
+          &.github {
+            background-image: url("../../assets/links-logo/github-button.png");
+            background-size: cover;
+          }
+          &.linkedin {
+            background-image: url("../../assets/links-logo/linkedin-logo.png");
+            background-size: cover;
+          }
+          &:hover {
+            background-size: 120px;
+            background-position: center;
+          }
+          &:active {
+            transform: translateY(3px);
+            box-shadow: 1px 2px 1px 1px rgb(0, 0, 0);
+          }
+        }
+      }
+    }
+    .contact-form-content {
+      width: 75%;
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        input {
+          border: none;
+          width: 85%;
+          font-size: 20px;
+          box-shadow: 1px 1px 3px 1px rgba(128, 128, 128, 0.212);
+          border-bottom: 2px solid gray;
+          color: #3828a1;
+          text-transform: capitalize;
+          text-indent: 5px;
+          &.email-name {
+            height: 50px;
+          }
+          &.text {
+            height: 200px;
+          }
+        }
+        .contact-submit-button {
+          width: 150px;
+          height: 40px;
+          align-self: center;
+          border: none;
+          border-radius: 2px;
+          box-shadow: 0px 1px 2px 1px rgb(93, 92, 92);
+          background-color: #3828a1;
+          color: white;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          cursor: pointer;
+          &:hover {
+            background-color: #342590;
+          }
+          &:active {
+            transform: translateY(2px);
+            box-shadow: 0px 0px 0px 1px rgb(93, 92, 92);
+          }
+        }
+      }
+    }
+  }
+}
