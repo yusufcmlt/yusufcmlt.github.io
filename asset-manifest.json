@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a3e43f32.chunk.css",
+    "main.js": "/static/js/main.c3b4ab11.chunk.js",
+    "main.js.map": "/static/js/main.c3b4ab11.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4efbd32d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4efbd32d.js.map",
+    "static/js/2.3d4f9a5b.chunk.js": "/static/js/2.3d4f9a5b.chunk.js",
+    "static/js/2.3d4f9a5b.chunk.js.map": "/static/js/2.3d4f9a5b.chunk.js.map",
+    "static/js/3.ef4dfeae.chunk.js": "/static/js/3.ef4dfeae.chunk.js",
+    "static/js/3.ef4dfeae.chunk.js.map": "/static/js/3.ef4dfeae.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a3e43f32.chunk.css.map": "/static/css/main.a3e43f32.chunk.css.map",
+    "static/js/2.3d4f9a5b.chunk.js.LICENSE.txt": "/static/js/2.3d4f9a5b.chunk.js.LICENSE.txt",
+    "static/media/SidebarButton.style.scss": "/static/media/projects.e7c39562.svg",
+    "static/media/index.css": "/static/media/background-blurred.8ea1e1eb.jpg",
+    "static/media/SidebarHeader.style.scss": "/static/media/profile.beae6dd2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4efbd32d.js",
+    "static/js/2.3d4f9a5b.chunk.js",
+    "static/css/main.a3e43f32.chunk.css",
+    "static/js/main.c3b4ab11.chunk.js"
+  ]
+}
