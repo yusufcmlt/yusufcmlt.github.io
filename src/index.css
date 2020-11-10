@@ -1,13 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+html,
 body {
+  font-family: "Montserrat", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.background-about {
+  background-image: linear-gradient(
+      150deg,
+      rgba(56, 40, 161, 0.75) 0%,
+      rgba(10, 7, 20, 0.75) 100%
+    ),
+    url("./assets/background-blurred.jpg");
+}
+.background-projects {
+  background-image: linear-gradient(
+      150deg,
+      rgba(249, 135, 4, 0.5) 0%,
+      rgba(56, 51, 36, 0.6) 100%
+    ),
+    url("./assets/background-blurred.jpg");
+}
+
+.background-contact {
+  background-image: linear-gradient(
+      150deg,
+      rgba(128, 217, 90, 0.75) 0%,
+      rgba(21, 41, 15, 0.75) 100%
+    ),
+    url("./assets/background-blurred.jpg");
 }

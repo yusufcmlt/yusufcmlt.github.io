@@ -1,0 +1,36 @@
+.sidebar-container {
+  background-color: rgba(216, 232, 246, 0.6);
+  width: 20%;
+  height: 95%;
+  border-radius: 15px 0px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: -3px 3px 15px 1px rgba(0, 0, 0, 0.24);
+
+  .sidebar-image {
+    margin: 10px auto 0 auto;
+    width: 100px;
+    height: 100px;
+    background-image: url("../../assets/sidebar-logos/profile.svg");
+    background-size: cover;
+  }
+  .sidebar-buttons-container {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+  }
+  .sidebar-hr {
+    width: 90%;
+    border-top: 1px solid #3828a1;
+    &.about {
+      border-top: 1px solid#3828a1;
+    }
+    &.projects {
+      border-top: 1px solid #f98704;
+    }
+    &.contact {
+      border-top: 1px solid #7ad851;
+    }
+  }
+}

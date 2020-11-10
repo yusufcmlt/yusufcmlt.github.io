@@ -1,0 +1,14 @@
+.App {
+  text-align: left;
+  width: 1366px;
+  height: 768px;
+  display: flex;
+
+  .route-content-container {
+    background-color: white;
+    width: 75%;
+    height: 95%;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.24);
+  }
+}

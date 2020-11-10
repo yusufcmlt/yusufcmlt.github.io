@@ -1,0 +1,55 @@
+.sidebar-button {
+  width: 90%;
+  height: 55px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+  color: black;
+  align-self: flex-end;
+  transition-duration: 0.1s;
+
+  &:hover {
+    border-radius: 5px 0 0 5px;
+    &.about {
+      background-color: #5c52a0;
+    }
+    &.projects {
+      background-color: #f6b56a;
+    }
+    &.contact {
+      background-color: #b2d6a3;
+    }
+  }
+
+  &.selected {
+    color: white;
+    border-radius: 5px 0 0 5px;
+    &.about {
+      background-color: #3828a1;
+    }
+    &.projects {
+      background-color: #f98704;
+    }
+    &.contact {
+      background-color: #7ad851;
+    }
+  }
+
+  .button-icon {
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    &.about {
+      background-image: url("../../assets/sidebar-logos/about.svg");
+    }
+    &.projects {
+      background-image: url("../../assets/sidebar-logos/projects.svg");
+    }
+    &.contact {
+      background-image: url("../../assets/sidebar-logos/contact.svg");
+    }
+  }
+}
