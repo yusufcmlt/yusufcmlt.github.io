@@ -1,0 +1,44 @@
+.about-page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+  .description-p {
+    font-size: 25px;
+    font-weight: 500;
+    width: 600px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .typing-p {
+    padding: 3px;
+    font-size: 20px;
+    font-family: "Source Code Pro", monospace;
+    background-color: #3828a1;
+    color: white;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .tools-image {
+    width: 400px;
+    height: 350px;
+    background-image: url("../../assets/skill-logos/skill-logos-mobile.png");
+    background-size: cover;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.123);
+    border-radius: 5px;
+  }
+  .projects-link {
+    font-size: 20px;
+    margin: 20px 0 0 10px;
+    font-weight: 700;
+    color: #f95804;
+  }
+}
