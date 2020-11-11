@@ -10,10 +10,20 @@
   color: black;
   align-self: flex-end;
   transition-duration: 0.1s;
+  @media (max-width: 800px) {
+    width: 100px;
+    height: 100%;
+    margin: 0;
+    font-size: 13px;
+    margin: 0 10px;
+  }
 
   &:hover {
     border-radius: 5px 0 0 5px;
     color: white;
+    @media (max-width: 800px) {
+      border-radius: 5px 5px 0 0;
+    }
     &.about {
       background-color: #5c52a0;
     }
@@ -28,6 +38,9 @@
   &.selected {
     color: white;
     border-radius: 5px 0 0 5px;
+    @media (max-width: 800px) {
+      border-radius: 5px 5px 0 0;
+    }
     &.about {
       background-color: #3828a1;
     }
@@ -44,6 +57,10 @@
     width: 30px;
     height: 30px;
     margin: 0 10px;
+    @media (max-width: 800px) {
+      width: 20px;
+      height: 20px;
+    }
     &.about {
       background-image: url("../../assets/sidebar-logos/about.svg");
     }
