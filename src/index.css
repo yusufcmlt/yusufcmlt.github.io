@@ -5,6 +5,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   height: 100%;
+  width: 100%;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -35,4 +36,14 @@ body {
       rgba(21, 41, 15, 0.65) 100%
     ),
     url("./assets/background-blurred.jpg");
+}
+@media screen and (max-width: 1600px) {
+  body {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    transform: scale(1);
+  }
 }
