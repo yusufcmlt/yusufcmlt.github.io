@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import { createNewContactMessage } from "../../firebase/firebase-utils";
+
 import "./Contact.style.scss";
+
 const Contact = () => {
+  const [userMessage, setUserMessage] = useState({
+    name: "",
+    email: "",
+    messageSent: "",
+  });
+
+  const handleFormChange = (event) => {
+    const { name, value } = event.target;
+    setUserMessage({ ...userMessage, [name]: value });
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await createNewContactMessage(userMessage);
+      setUserMessage({
+        name: "",
+        email: "",
+        messageSent: "",
+      });
+      alert("Message Sent!");
+    } catch (error) {
+      alert("There is an error sending your message.");
+      console.log(error);
+    }
+  };
+
+  const { name, email, messageSent } = userMessage;
   return (
     <div className="contact-page-container">
       <h2>Let's Get in Touch!</h2>
@@ -31,26 +62,32 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-form-content">
-          <form
-            className="contact-form"
-            onClick={(event) => event.preventDefault()}
-          >
+          <form className="contact-form" onSubmit={handleFormSubmit}>
             <input
               type="text"
-              placeholder="name"
+              placeholder="Name"
               className="email-name"
+              name="name"
+              value={name}
+              onChange={handleFormChange}
               required
             />
             <input
               type="email"
-              placeholder="email"
+              placeholder="Email"
               className="email-name"
+              name="email"
+              value={email}
+              onChange={handleFormChange}
               required
             />
-            <input
-              type="text"
+            <textarea
               placeholder="Your Message"
               className="text"
+              maxLength="500"
+              name="messageSent"
+              value={messageSent}
+              onChange={handleFormChange}
               required
             />
             <button type="submit" className="contact-submit-button">
