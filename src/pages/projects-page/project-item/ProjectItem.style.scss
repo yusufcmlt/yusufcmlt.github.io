@@ -4,16 +4,16 @@
   justify-content: space-around;
   height: 400px;
   background-color: #fffbfb;
-  border: 1px solid rgba(128, 128, 128, 0.151);
+  border: 1px solid rgba(128, 128, 128, 0.418);
   margin: 10px 10px 10px 0;
   padding: 15px 0;
   border-radius: 5px;
-  opacity: 0.8;
+  box-shadow: -2px 1px 5px 0px rgb(155, 154, 154);
 
   cursor: default;
   &:hover {
     background-color: #faf0f0;
-    opacity: 1;
+
     & .project-text {
       color: black;
       font-weight: 600;
