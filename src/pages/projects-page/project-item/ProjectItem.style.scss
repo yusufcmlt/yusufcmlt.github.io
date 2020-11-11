@@ -9,8 +9,12 @@
   padding: 15px 0;
   border-radius: 5px;
   box-shadow: -2px 1px 5px 0px rgb(155, 154, 154);
-
   cursor: default;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: 100%;
+    box-shadow: none;
+  }
   &:hover {
     background-color: #faf0f0;
 
@@ -24,19 +28,33 @@
     width: 250px;
     height: 150px;
     background-size: cover;
+    @media (max-width: 800px) {
+      width: 230px;
+      height: 130px;
+    }
   }
   .project-info {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin: 0 0 0 10px;
+    @media (max-width: 800px) {
+      width: 95%;
+    }
 
     .project-head {
       display: flex;
       justify-content: space-between;
+      @media (max-width: 800px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
       .project-title {
         margin: 10px 0;
         font-weight: 600;
+        @media (max-width: 800px) {
+          font-size: 15px;
+        }
       }
       .project-link {
         width: 50px;
@@ -44,6 +62,11 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 2px 0px 1px rgba(17, 6, 116, 0.356);
         border-radius: 5px;
+        @media (max-width: 800px) {
+          width: 35px;
+          height: 35px;
+          margin: 0 10px;
+        }
         &.github {
           background-image: url("../../../assets//links-logo/github-button.png");
           background-size: cover;
@@ -65,10 +88,13 @@
       font-weight: 500;
       margin: 0;
       padding: 20px 0;
+      @media (max-width: 800px) {
+        font-size: 10px;
+      }
     }
     .project-tags {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
 
       .tag {
         background-color: #3828a1;
@@ -77,6 +103,9 @@
         margin: 0 5px;
         font-size: 13px;
         font-weight: 600;
+        @media (max-width: 800px) {
+          transform: scale(0.85);
+        }
       }
     }
   }

@@ -45,5 +45,12 @@ body {
 @media screen and (max-width: 800px) {
   body {
     transform: scale(1);
+    margin: auto;
+    height: auto;
+  }
+  .background-about,
+  .background-projects,
+  .background-contact {
+    background-size: 150vw 150vh;
   }
 }
