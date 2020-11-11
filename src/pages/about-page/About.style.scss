@@ -46,8 +46,7 @@
 
     border-radius: 5px;
     @media (max-width: 800px) {
-      width: 90%;
-      height: 250px;
+      transform: scale(0.8);
     }
   }
   .projects-link {
