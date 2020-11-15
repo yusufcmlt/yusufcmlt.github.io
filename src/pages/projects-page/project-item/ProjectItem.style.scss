@@ -8,12 +8,11 @@
   margin: 10px 10px 10px 0;
   padding: 15px 0;
   border-radius: 5px;
-  box-shadow: -2px 1px 5px 0px rgb(155, 154, 154);
+  box-shadow: -2px 1px 5px 2px #9b9a9a;
   cursor: default;
   @media (max-width: 800px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 100%;
-    box-shadow: none;
   }
   &:hover {
     background-color: #faf0f0;
@@ -31,6 +30,7 @@
     @media (max-width: 800px) {
       width: 230px;
       height: 130px;
+      margin-bottom: 20px;
     }
   }
   .project-info {
@@ -60,7 +60,7 @@
         width: 50px;
         height: 50px;
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 2px 0px 1px rgba(17, 6, 116, 0.356);
+        box-shadow: 0px 2px 2px 2px rgba(17, 6, 116, 0.356);
         border-radius: 5px;
         @media (max-width: 800px) {
           width: 35px;
@@ -76,7 +76,7 @@
           background-size: cover;
         }
         &:hover {
-          box-shadow: 0px 2px 0px 1px rgba(17, 6, 116, 0.644);
+          box-shadow: 0px 2px 2px 2px rgba(99, 7, 136, 0.424);
         }
         &:active {
           transform: translateY(2px);
@@ -94,7 +94,7 @@
     }
     .project-tags {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
 
       .tag {
         background-color: #3828a1;
