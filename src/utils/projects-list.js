@@ -1,39 +1,48 @@
+import cizimOyunuImg from "../assets/project-images/cizim-oyunu1.png";
+import nodemcuImg from "../assets/project-images/nodemcu.png";
+import freecodecampImg from "../assets/project-images/freecodecamp-gif.gif";
+import ecommerceImg from "../assets/project-images/ecommerce.png";
 const projectList = [
   {
-    title: "Guess The Drawing/Pictionary Clone",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1302&q=80",
+    title: "Guess The Drawing / Online Pictionary Clone",
+    image: cizimOyunuImg,
     links: { github: "https://github.com", web: "http://cizimoyunu.github.io" },
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["React", "SocketIO", "Firebase"],
+    text: "Multiplayer drawing game with React, Socket.io and p5.js.",
+    tags: ["React", "SocketIO", "Firebase", "Hooks", "p5.js"],
   },
   {
-    title: "Guess The Drawing/Pictionary Clone",
-    image:
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    links: { github: "https://github.com", web: "http://cizimoyunu.github.io" },
+    title: "NodeMCU Smart Home System Interface",
+    image: nodemcuImg,
+    links: {
+      github:
+        "https://github.com/pdouu/nodemcu-home-project/tree/client-refactor/nodemcu-client",
+      web: "https://pdouu.github.io/nodemcu-home-project/",
+    },
     text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["React", "SocketIO", "Firebase"],
+      "A smart home prototype with NodeMCU microcontroller, react and firebase as user interface.",
+    tags: ["NodeMCU", "Firebase", "React", "Hooks"],
   },
   {
-    title: "Guess The Drawing/Pictionary Clone",
-    image:
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    links: { github: "https://github.com", web: "http://cizimoyunu.github.io" },
+    title: "FreeCodeCamp Front End Projects",
+    image: freecodecampImg,
+    links: {
+      github: "https://github.com/pdouu/freecodecamp-projects",
+      web: "https://github.com/pdouu/freecodecamp-projects",
+    },
     text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["React", "SocketIO", "Firebase"],
+      "Projects that i've done as a part of FreeCodeCamp front-end developer curriculum. Pomodoro clock, calculator, drum machine, markdown editor and random quote apps.",
+    tags: ["React", "FreeCodeCamp", "Hooks"],
   },
   {
-    title: "Guess The Drawing/Pictionary Clone",
-    image:
-      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    links: { github: "https://github.com", web: "http://cizimoyunu.github.io" },
+    title: "React E-commerce App / WearSomtn",
+    image: ecommerceImg,
+    links: {
+      github: "https://github.com/pdouu/react-ecommerce/tree/backend/client",
+      web: "https://pdouu.github.io/react-ecommerce/",
+    },
     text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    tags: ["React", "SocketIO", "Firebase"],
+      "E-commerce app with React and Redux. Firebase as database. I've started this project as part of a udemy course but then implemented responsive design, admin dashboard, item searching and individual item pages.",
+    tags: ["React", "Redux", "Firebase", "Hooks"],
   },
 ];
 
