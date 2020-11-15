@@ -6,22 +6,24 @@ const ProjectItem = ({ title, image, text, links, tags }) => {
       <div className="project-info">
         <div className="project-head">
           <h3 className="project-title">{title}</h3>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="project-link github"
-            href={links.github}
-          >
-            {""}
-          </a>
-          <a
-            className="project-link web"
-            target="_blank"
-            rel="noreferrer"
-            href={links.web}
-          >
-            {""}
-          </a>
+          <div className="project-links-container">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="project-link github"
+              href={links.github}
+            >
+              {""}
+            </a>
+            <a
+              className="project-link web"
+              target="_blank"
+              rel="noreferrer"
+              href={links.web}
+            >
+              {""}
+            </a>
+          </div>
         </div>
         <p className="project-text">{text}</p>
         <div className="project-tags">

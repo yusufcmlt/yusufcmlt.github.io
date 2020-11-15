@@ -2,20 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 400px;
+  width: 98%;
+  height: 380px;
   background-color: #fffbfb;
-  border: 1px solid rgba(128, 128, 128, 0.418);
   margin: 10px 10px 10px 0;
   padding: 15px 0;
   border-radius: 5px;
-  box-shadow: -2px 1px 5px 2px #9b9a9a;
+  box-shadow: -0px 0px 5px 1px #9b9a9a;
   cursor: default;
   @media (max-width: 800px) {
     flex-direction: column-reverse;
-    height: 100%;
+    width: 95%;
   }
   &:hover {
-    background-color: #faf0f0;
+    background-color: #e7e3e3;
 
     & .project-text {
       color: black;
@@ -26,7 +26,10 @@
   .project-image {
     width: 250px;
     height: 150px;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(181, 159, 243, 0.685);
+    border-radius: 2px;
     @media (max-width: 800px) {
       width: 230px;
       height: 130px;
@@ -38,6 +41,7 @@
     flex-direction: column;
     width: 60%;
     margin: 0 0 0 10px;
+
     @media (max-width: 800px) {
       width: 95%;
     }
@@ -45,6 +49,7 @@
     .project-head {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       @media (max-width: 800px) {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -56,46 +61,58 @@
           font-size: 15px;
         }
       }
-      .project-link {
-        width: 50px;
-        height: 50px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0px 2px 2px 2px rgba(17, 6, 116, 0.356);
-        border-radius: 5px;
+      .project-links-container {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
         @media (max-width: 800px) {
-          width: 35px;
-          height: 35px;
+          width: 100%;
+          justify-content: center;
+        }
+        .project-link {
+          width: 40px;
+          height: 40px;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 0px 2px 2px 2px rgba(17, 6, 116, 0.356);
+          border-radius: 5px;
           margin: 0 10px;
-        }
-        &.github {
-          background-image: url("../../../assets//links-logo/github-button.png");
-          background-size: cover;
-        }
-        &.web {
-          background-image: url("../../../assets/links-logo/web-button.png");
-          background-size: cover;
-        }
-        &:hover {
-          box-shadow: 0px 2px 2px 2px rgba(99, 7, 136, 0.424);
-        }
-        &:active {
-          transform: translateY(2px);
+
+          @media (max-width: 800px) {
+            width: 35px;
+            height: 35px;
+          }
+          &.github {
+            background-image: url("../../../assets//links-logo/github-button.png");
+            background-size: cover;
+          }
+          &.web {
+            background-image: url("../../../assets/links-logo/web-button.png");
+            background-size: cover;
+          }
+          &:hover {
+            box-shadow: 0px 2px 2px 2px rgba(99, 7, 136, 0.424);
+          }
+          &:active {
+            transform: translateY(2px);
+          }
         }
       }
     }
     .project-text {
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 500;
       margin: 0;
       padding: 20px 0;
       @media (max-width: 800px) {
-        font-size: 10px;
+        font-size: 12px;
       }
     }
     .project-tags {
       display: flex;
       justify-content: flex-start;
-
+      @media (max-width: 800px) {
+        justify-content: center;
+      }
       .tag {
         background-color: #3828a1;
         color: white;
