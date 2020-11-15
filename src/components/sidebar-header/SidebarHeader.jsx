@@ -4,8 +4,6 @@ import "./SidebarHeader.style.scss";
 const SidebarHeader = ({ selectedButton }) => {
   return (
     <div className="sidebar-container">
-      <div className="sidebar-image" />
-      <hr className={`sidebar-hr ${selectedButton}`} />
       <div className="sidebar-buttons-container">
         <SidebarButton
           pageName="About"
@@ -23,7 +21,7 @@ const SidebarHeader = ({ selectedButton }) => {
           selectedButton={selectedButton}
         />
       </div>
-      <hr className={`sidebar-hr ${selectedButton}`} />
+
       <div className="sidebar-language"></div>
     </div>
   );
