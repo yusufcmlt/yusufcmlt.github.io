@@ -17,7 +17,7 @@ const About = () => {
       <div className="tools-image" />
 
       <Link to={`${process.env.PUBLIC_URL}/projects`} className="projects-link">
-        in my projects...
+        in my projects
       </Link>
     </div>
   );
