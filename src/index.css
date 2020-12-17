@@ -46,7 +46,7 @@ body {
   body {
     transform: scale(1);
     margin: auto;
-    height: auto;
+    align-items: flex-start;
   }
   .background-about,
   .background-projects,
