@@ -44,7 +44,7 @@ const Contact = () => {
           </p>
           <div className="contact-links-container">
             <a
-              href="https://github.com/pdouu"
+              href="https://github.com/yusufcmlt"
               className="contact-link github"
               target="_blank"
               rel="noreferrer"

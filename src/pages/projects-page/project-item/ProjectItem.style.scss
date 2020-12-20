@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 98%;
-  height: 380px;
+  width: 95%;
   background-color: #fffbfb;
   margin: 10px 10px 10px 0;
   padding: 15px 0;
@@ -12,7 +11,6 @@
   cursor: default;
   @media (max-width: 800px) {
     flex-direction: column-reverse;
-    width: 95%;
   }
   &:hover {
     background-color: #e7e3e3;
@@ -117,7 +115,7 @@
         background-color: #3828a1;
         color: white;
         padding: 4px;
-        margin: 0 5px;
+        margin: 0 3px;
         font-size: 13px;
         font-weight: 600;
         @media (max-width: 800px) {
