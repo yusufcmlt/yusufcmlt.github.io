@@ -27,8 +27,10 @@ const ProjectItem = ({ title, image, text, links, tags }) => {
         </div>
         <p className="project-text">{text}</p>
         <div className="project-tags">
-          {tags.map((tag) => (
-            <span className="tag">{tag}</span>
+          {tags.map((tag, index) => (
+            <span key={index + "a"} className="tag">
+              {tag}
+            </span>
           ))}
         </div>
       </div>
