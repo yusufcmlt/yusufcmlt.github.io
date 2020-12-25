@@ -17,8 +17,7 @@ const projectList = [
     title: "NodeMCU Smart Home System Interface",
     image: nodemcuImg,
     links: {
-      github:
-        "https://github.com/yusufcmlt/nodemcu-home-project/tree/client-refactor/nodemcu-client",
+      github: "https://github.com/yusufcmlt/nodemcu-home-project",
       web: "https://yusufcmlt.github.io/nodemcu-home-project/",
     },
     text:
@@ -40,8 +39,7 @@ const projectList = [
     title: "React E-commerce App / WearSomtn",
     image: ecommerceImg,
     links: {
-      github:
-        "https://github.com/yusufcmlt/react-ecommerce/tree/backend/client",
+      github: "https://github.com/yusufcmlt/react-ecommerce",
       web: "https://yusufcmlt.github.io/react-ecommerce/",
     },
     text:
