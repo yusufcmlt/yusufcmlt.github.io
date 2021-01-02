@@ -10,7 +10,8 @@ const projectList = [
       github: "https://github.com/yusufcmlt/cizim-oyunu",
       web: "http://cizimoyunu.github.io",
     },
-    text: "Multiplayer drawing game with React, Socket.io and p5.js.",
+    text:
+      "A web based multiplayer drawing game with React, Socket.io and p5.js.",
     tags: ["React", "SocketIO", "Firebase", "Hooks", "p5.js"],
   },
   {

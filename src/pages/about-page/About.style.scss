@@ -4,9 +4,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-left: 50px;
   @media (max-width: 768px) {
+    margin-left: 0;
     margin-bottom: 20px;
+    align-items: center;
   }
   h1 {
     font-size: 60px;
@@ -17,22 +20,35 @@
       line-height: 1.5;
     }
   }
+
   .description-p {
     font-size: 25px;
-    font-weight: 500;
-    width: 600px;
-    text-align: center;
-    margin-top: 10px;
+    width: 900px;
+    margin: 20px 0 15px 0;
+    line-height: 1.5;
     @media (max-width: 800px) {
-      font-size: 20px;
+      text-align: center;
+      margin: 0;
       width: 100%;
+      font-size: 16px;
       line-height: 1.5;
-      height: 50px;
+      padding: 10px 0;
+    }
+    .about-job {
+      font-weight: 600;
     }
   }
+  .about-name {
+    font-size: 35px;
+    font-weight: 600;
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
+  }
+
   .typing-p {
-    padding: 3px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 25px;
     font-family: "Source Code Pro", monospace;
     background-color: #3828a1;
     color: white;
@@ -42,23 +58,29 @@
   }
 
   .tools-image {
-    width: 400px;
-    height: 350px;
-    background-image: url("../../assets/skill-logos/skill-logos-mobile.png");
+    width: 450px;
+    height: 325px;
+    background-image: url("../../assets/skill-logos/skills-desktop.png");
     background-size: cover;
-
-    border-radius: 5px;
+    margin: 20px 0;
     @media (max-width: 800px) {
-      transform: scale(0.8);
+      margin: 50px auto;
+      width: 300px;
+      height: 220px;
+      transform: scale(1.1);
+      background-image: url("../../assets/skill-logos/skills-mobile.png");
     }
   }
   .projects-link {
-    font-size: 20px;
-    margin: 20px 0 0 10px;
+    font-size: 23px;
+    padding: 1px 5px;
     font-weight: 600;
-    color: #3828a1;
+    background-color: #f98704;
+    border-radius: 2px;
+    color: white;
     @media (max-width: 800px) {
       margin: 10px 0 0px 0;
+      font-size: 20px;
     }
   }
 }
