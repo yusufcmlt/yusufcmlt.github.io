@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.135a0088.chunk.css",
-    "main.js": "/static/js/main.10484683.chunk.js",
-    "main.js.map": "/static/js/main.10484683.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.90850053.js",
-    "runtime-main.js.map": "/static/js/runtime-main.90850053.js.map",
-    "static/js/2.59598fb1.chunk.js": "/static/js/2.59598fb1.chunk.js",
-    "static/js/2.59598fb1.chunk.js.map": "/static/js/2.59598fb1.chunk.js.map",
-    "static/js/3.b6de2e32.chunk.js": "/static/js/3.b6de2e32.chunk.js",
-    "static/js/3.b6de2e32.chunk.js.map": "/static/js/3.b6de2e32.chunk.js.map",
+    "main.css": "/static/css/main.a67e0859.chunk.css",
+    "main.js": "/static/js/main.e0b040a7.chunk.js",
+    "main.js.map": "/static/js/main.e0b040a7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.60ee3695.js",
+    "runtime-main.js.map": "/static/js/runtime-main.60ee3695.js.map",
+    "static/js/2.a75f3899.chunk.js": "/static/js/2.a75f3899.chunk.js",
+    "static/js/2.a75f3899.chunk.js.map": "/static/js/2.a75f3899.chunk.js.map",
+    "static/js/3.c28ef0d7.chunk.js": "/static/js/3.c28ef0d7.chunk.js",
+    "static/js/3.c28ef0d7.chunk.js.map": "/static/js/3.c28ef0d7.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.135a0088.chunk.css.map": "/static/css/main.135a0088.chunk.css.map",
-    "static/js/2.59598fb1.chunk.js.LICENSE.txt": "/static/js/2.59598fb1.chunk.js.LICENSE.txt",
+    "static/css/main.a67e0859.chunk.css.map": "/static/css/main.a67e0859.chunk.css.map",
+    "static/js/2.a75f3899.chunk.js.LICENSE.txt": "/static/js/2.a75f3899.chunk.js.LICENSE.txt",
     "static/media/SidebarButton.style.scss": "/static/media/projects.e7c39562.svg",
     "static/media/index.css": "/static/media/background-blurred.cf1a07cc.jpg",
     "static/media/cizim-oyunu1.695c58d3.png": "/static/media/cizim-oyunu1.695c58d3.png",
@@ -20,13 +20,13 @@
     "static/media/Contact.style.scss": "/static/media/github-button.6acad514.png",
     "static/media/nodemcu.deda9cda.png": "/static/media/nodemcu.deda9cda.png",
     "static/media/SidebarHeader.style.scss": "/static/media/profile.beae6dd2.svg",
-    "static/media/About.style.scss": "/static/media/skill-logos-mobile.b71bb70c.png",
+    "static/media/About.style.scss": "/static/media/skills-mobile.fb69d326.png",
     "static/media/ProjectItem.style.scss": "/static/media/web-button.bd63f7b6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.90850053.js",
-    "static/js/2.59598fb1.chunk.js",
-    "static/css/main.135a0088.chunk.css",
-    "static/js/main.10484683.chunk.js"
+    "static/js/runtime-main.60ee3695.js",
+    "static/js/2.a75f3899.chunk.js",
+    "static/css/main.a67e0859.chunk.css",
+    "static/js/main.e0b040a7.chunk.js"
   ]
 }
