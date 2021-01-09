@@ -19,7 +19,6 @@
   }
 
   &:hover {
-    border-radius: 5px 0 0 5px;
     color: white;
     @media (max-width: 800px) {
       border-radius: 5px 5px 0 0;
@@ -37,7 +36,7 @@
 
   &.selected {
     color: white;
-    border-radius: 5px 0 0 5px;
+
     @media (max-width: 800px) {
       border-radius: 5px 5px 0 0;
     }

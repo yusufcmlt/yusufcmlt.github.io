@@ -9,19 +9,16 @@
     flex-direction: column;
     width: 100vw;
     height: 100%;
-    margin: 10px 0;
   }
 
   .route-content-container {
-    background-color: white;
+    background-color: rgb(241, 240, 240);
     width: 75%;
     height: 95%;
-
-    border-radius: 0 15px 15px 0;
     box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.24);
     @media (max-width: 800px) {
       flex-direction: column;
-      width: 95%;
+      width: 100%;
       height: 100%;
       border-radius: 0 0 5px 5px;
     }

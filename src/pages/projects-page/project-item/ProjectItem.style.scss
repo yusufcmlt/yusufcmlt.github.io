@@ -7,8 +7,7 @@
   background-color: #fffbfb;
   margin: 10px 10px 10px 0;
   padding: 15px 15px;
-  border-radius: 5px;
-  box-shadow: -0px 0px 1px 1px rgba(156, 155, 155, 0.35);
+  box-shadow: -0px 0px 5px 3px rgba(156, 155, 155, 0.35);
   cursor: default;
 
   @media (max-width: 800px) {
@@ -16,7 +15,7 @@
     flex-direction: column-reverse;
   }
   &:hover {
-    background-color: #e7e3e3;
+    background-color: rgb(255, 255, 255);
 
     & .project-text {
       color: black;
@@ -74,7 +73,7 @@
           width: 40px;
           height: 40px;
           background-color: rgb(255, 255, 255);
-          box-shadow: 0px 2px 2px 2px rgba(17, 6, 116, 0.356);
+          box-shadow: 1px 2px 1px 1px rgb(0, 0, 0);
           border-radius: 5px;
           margin: 0 10px;
 
@@ -91,7 +90,7 @@
             background-size: cover;
           }
           &:hover {
-            box-shadow: 0px 2px 2px 2px rgba(99, 7, 136, 0.424);
+            box-shadow: 1px 2px 1px 1px rgb(209, 99, 10);
           }
           &:active {
             transform: translateY(2px);
