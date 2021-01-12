@@ -13,7 +13,7 @@ const ProjectItem = ({ title, image, text, links, tags }) => {
               className="project-link github"
               href={links.github}
             >
-              {""}
+              Github
             </a>
             <a
               className="project-link web"
@@ -21,7 +21,7 @@ const ProjectItem = ({ title, image, text, links, tags }) => {
               rel="noreferrer"
               href={links.web}
             >
-              {""}
+              Web
             </a>
           </div>
         </div>

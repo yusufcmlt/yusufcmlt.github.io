@@ -3,16 +3,17 @@
   display: -webkit-box;
   -webkit-box-pack: justify;
   align-items: center;
-  width: 88%;
+  width: 90%;
   background-color: #fffbfb;
   margin: 10px 10px 10px 0;
-  padding: 15px 15px;
-  box-shadow: -0px 0px 5px 3px rgba(156, 155, 155, 0.35);
+  box-shadow: -0px 0px 7px 3px rgba(156, 155, 155, 0.35);
   cursor: default;
 
   @media (max-width: 800px) {
     display: flex;
     flex-direction: column-reverse;
+    width: 95%;
+    box-shadow: 1px 1px 15px 1px rgba(156, 155, 155, 0.35);
   }
   &:hover {
     background-color: rgb(255, 255, 255);
@@ -22,25 +23,26 @@
       font-weight: 600;
     }
   }
-
   .project-image {
-    width: 250px;
-    height: 150px;
+    width: 40%;
+    height: 100%;
+    padding: 0;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    border: 2px solid rgba(181, 159, 243, 0.685);
     border-radius: 2px;
     @media (max-width: 800px) {
-      width: 230px;
-      height: 130px;
+      width: 100%;
+      height: 200px;
       margin-bottom: 20px;
     }
   }
+
   .project-info {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin: 0 0 0 10px;
+    padding: 15px 10px;
 
     @media (max-width: 800px) {
       width: 95%;
@@ -70,30 +72,40 @@
           justify-content: center;
         }
         .project-link {
-          width: 40px;
+          width: 100px;
           height: 40px;
-          background-color: rgb(255, 255, 255);
-          box-shadow: 1px 2px 1px 1px rgb(0, 0, 0);
+          background-color: rgb(243, 242, 242);
+          box-shadow: 1px 2px 1px 1px rgb(209, 99, 10);
           border-radius: 5px;
           margin: 0 10px;
+          background-size: 25%;
+          background-repeat: no-repeat;
+          background-position: 10%;
+          text-decoration: none;
+          display: flex;
+          justify-content: flex-end;
+          padding: 0 5px;
+          align-items: center;
+          font-weight: 600;
+          color: rgb(209, 99, 10);
 
           @media (max-width: 800px) {
-            width: 35px;
+            width: 90px;
             height: 35px;
           }
           &.github {
-            background-image: url("../../../assets//links-logo/github-button.png");
-            background-size: cover;
+            background-image: url("../../../assets//links-logo/github-logo.png");
           }
           &.web {
-            background-image: url("../../../assets/links-logo/web-button.png");
-            background-size: cover;
+            background-image: url("../../../assets/links-logo/web-logo.png");
           }
           &:hover {
-            box-shadow: 1px 2px 1px 1px rgb(209, 99, 10);
+            box-shadow: 1px 2px 1px 1px #3828a1;
+            color: #3828a1;
           }
           &:active {
-            transform: translateY(2px);
+            transform: translate(2px, 1px);
+            box-shadow: 0px 0px 0px 0px rgb(209, 99, 10);
           }
         }
       }
@@ -114,7 +126,7 @@
         justify-content: center;
       }
       .tag {
-        background-color: #3828a1;
+        background-color: rgb(209, 99, 10);
         color: white;
         padding: 4px;
         margin: 0 3px;
