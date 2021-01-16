@@ -11,8 +11,9 @@
   align-self: flex-end;
   transition-duration: 0.1s;
   @media (max-width: 800px) {
+    align-self: center;
     width: 30vw;
-    height: 100%;
+    height: 75%;
     margin: 0;
     font-size: 14px;
     margin: 0 5px;
