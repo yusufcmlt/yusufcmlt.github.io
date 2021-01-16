@@ -34,10 +34,7 @@ const ProjectItem = ({ title, image, text, links, tags }) => {
           ))}
         </div>
       </div>
-      <div
-        className="project-image"
-        style={{ backgroundImage: `url(${image})` }}
-      />
+      <img className="project-image" src={image} alt="project" />
     </div>
   );
 };
