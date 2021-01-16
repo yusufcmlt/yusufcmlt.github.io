@@ -4,7 +4,7 @@ import freecodecampImg from "../assets/project-images/freecodecamp-gif.gif";
 import ecommerceImg from "../assets/project-images/ecommerce.png";
 const projectList = [
   {
-    title: "Guess The Drawing / Online Pictionary Clone",
+    title: "Guess The Drawing / Online Pictionary Game",
     image: cizimOyunuImg,
     links: {
       github: "https://github.com/yusufcmlt/cizim-oyunu",

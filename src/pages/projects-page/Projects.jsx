@@ -13,7 +13,7 @@ const Projects = () => {
       <h1>Some of My Work</h1>
       <p>
         Some work i did while i was{" "}
-        <small className="small-text">mostly learning.</small>.
+        <small className="small-text">mostly learning.</small>
       </p>
       <div className="projects-container">
         {projectsList.map((project, index) => (
