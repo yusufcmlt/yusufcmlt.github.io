@@ -3,17 +3,19 @@
   display: -webkit-box;
   -webkit-box-pack: justify;
   align-items: center;
-  width: 90%;
+  width: 95%;
+  min-height: 250px;
   background-color: #fffbfb;
   margin: 10px 10px 10px 0;
   box-shadow: -0px 0px 7px 3px rgba(156, 155, 155, 0.35);
   cursor: default;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 
   @media (max-width: 800px) {
+    margin: 10px 0;
     display: flex;
     flex-direction: column-reverse;
-    width: 95%;
+    width: 90%;
     box-shadow: 1px 1px 15px 1px rgba(156, 155, 155, 0.35);
   }
   &:hover {
@@ -26,13 +28,11 @@
     }
   }
   .project-image {
-    width: 40%;
-    height: 100%;
+    width: 370px;
+    height: 250px;
     padding: 0;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 2px;
     @media (max-width: 800px) {
+      min-height: unset;
       width: 100%;
       height: auto;
       margin-bottom: 20px;
@@ -45,6 +45,7 @@
     width: 60%;
     margin: 0 0 0 10px;
     padding: 15px 10px;
+    justify-content: space-between;
 
     @media (max-width: 800px) {
       width: 95%;

@@ -10,11 +10,8 @@ const Projects = () => {
 
   return (
     <div className="projects-page-container">
-      <h1>Some of My Work</h1>
-      <p>
-        Some work i did while i was{" "}
-        <small className="small-text">mostly learning.</small>
-      </p>
+      <h1>Projects</h1>
+      <p>Some projects that i've worked on.</p>
       <div className="projects-container">
         {projectsList.map((project, index) => (
           <ProjectItem
