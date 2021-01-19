@@ -1,37 +1,40 @@
 .sidebar-button {
-  width: 90%;
-  height: 15%;
+  width: 85%;
+  height: 65px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 23px;
   display: flex;
-  margin: 5px 0;
+  margin: 20px 0;
   align-items: center;
   color: black;
-  align-self: flex-end;
-  transition-duration: 0.1s;
+  align-self: flex-start;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  background-color: rgba(246, 245, 245, 0.404);
+
   @media (max-width: 800px) {
     align-self: center;
     width: 30vw;
     height: 75%;
-    margin: 0;
+
     font-size: 14px;
     margin: 0 5px;
   }
 
   &:hover {
-    color: white;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.068);
     @media (max-width: 800px) {
       border-radius: 2px;
     }
     &.about {
-      background-color: #5c52a0;
+      color: #3828a1;
     }
     &.projects {
-      background-color: #f6b56a;
+      color: #f98704;
     }
     &.contact {
-      background-color: #b2d6a3;
+      color: #7ad851;
     }
   }
 
@@ -50,12 +53,16 @@
     &.contact {
       background-color: #7ad851;
     }
+
+    &:hover {
+      color: black;
+    }
   }
 
   .button-icon {
     background-size: cover;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin: 0 10px;
     @media (max-width: 800px) {
       width: 23px;

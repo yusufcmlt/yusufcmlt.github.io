@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="about-page-container">
-      <h1>{aboutPageText.hello_message}</h1>
+      <h1>Hello!</h1>
       <div className="description-p about-name">My name is Yusuf Cemal.</div>
       <div className="description-p">
         I am a <span className="about-job">web developer / student</span> living
