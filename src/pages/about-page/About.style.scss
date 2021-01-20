@@ -1,6 +1,18 @@
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .about-page-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,8 +21,9 @@
 
   @media (max-width: 800px) {
     margin-left: 0;
-    margin-bottom: 20px;
+
     align-items: center;
+    justify-content: flex-start;
     text-align: justify;
 
     h1 {
@@ -19,31 +32,85 @@
     }
   }
   h1 {
-    font-size: 60px;
+    font-size: 3vw;
     margin: 0;
+    animation: fadeInAnimation 0.5s backwards;
+    animation-delay: 0.5s;
     @media (max-width: 800px) {
-      font-size: 50px;
       margin-top: 20px;
+      margin-bottom: 50px;
       line-height: 1.5;
+      font-size: 13vw;
     }
   }
 
   .description-p {
-    font-size: 22px;
-    width: 900px;
+    &.about-name {
+      animation-delay: 1s;
+      font-size: 1.7vw;
+      @media (max-width: 800px) {
+        font-size: 4vw;
+      }
+    }
+    font-size: 1.2vw;
+    width: 55vw;
     margin: 20px 0 15px 0;
     line-height: 1.5;
+    animation: fadeInAnimation 0.5s backwards;
+    animation-delay: 2.5s;
 
     @media (max-width: 800px) {
       margin: 0;
       width: 85%;
-      font-size: 16px;
+      font-size: 3vw;
       line-height: 1.5;
       padding: 15px 0;
       font-weight: 300;
     }
     .about-job {
       font-weight: 600;
+    }
+    .skills-container {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 10px;
+      justify-items: auto;
+      max-width: 70%;
+      height: 90%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      @media (max-width: 800px) {
+        max-width: 100%;
+        height: 50%;
+        justify-items: center;
+        column-gap: 0;
+      }
+
+      & :nth-child(1) {
+        animation-delay: 4s;
+      }
+      & :nth-child(2) {
+        animation-delay: 4.5s;
+      }
+      & :nth-child(3) {
+        animation-delay: 5s;
+      }
+      & :nth-child(4) {
+        animation-delay: 5.5s;
+      }
+      & :nth-child(5) {
+        animation-delay: 6s;
+      }
+      & :nth-child(6) {
+        animation-delay: 6.5s;
+      }
+      & :nth-child(7) {
+        animation-delay: 7s;
+      }
+      & :nth-child(8) {
+        animation-delay: 7.5s;
+      }
     }
   }
   .about-name {
@@ -65,20 +132,6 @@
     font-size: 20px;
   }
 
-  .tools-image {
-    width: 450px;
-    height: 325px;
-    background-image: url("../../assets/skill-logos/skills-desktop.png");
-    background-size: cover;
-    margin: 20px 0;
-    @media (max-width: 800px) {
-      margin: 50px auto;
-      width: 300px;
-      height: 220px;
-      transform: scale(1.1);
-      background-image: url("../../assets/skill-logos/skills-mobile.png");
-    }
-  }
   .projects-link {
     padding: 1px 5px;
     font-weight: 600;

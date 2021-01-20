@@ -15,7 +15,7 @@ const projectList = [
     tags: ["React", "SocketIO", "Firebase", "Hooks", "p5.js"],
   },
   {
-    title: "NodeMCU Smart Home System Interface",
+    title: "NodeMCU Smart Home Protoype Web UI",
     image: nodemcuImg,
     links: {
       github: "https://github.com/yusufcmlt/nodemcu-home-project",
@@ -44,7 +44,7 @@ const projectList = [
       web: "https://yusufcmlt.github.io/react-ecommerce/",
     },
     text:
-      "E-commerce app with React and Redux. Firebase as database. I've started this project as part of a udemy course but then implemented responsive design, admin dashboard, item searching and individual item pages.",
+      "E-commerce app with React and Redux. I've started this project as part of a udemy course but then implemented responsive design, admin dashboard, item searching and individual item pages.",
     tags: ["React", "Redux", "Firebase", "Hooks"],
   },
 ];

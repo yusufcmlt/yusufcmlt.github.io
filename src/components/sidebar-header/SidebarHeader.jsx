@@ -7,22 +7,20 @@ const SidebarHeader = ({ selectedButton }) => {
       <div className="sidebar-buttons-container">
         <SidebarButton
           pageName="About"
-          pagePath={`${process.env.PUBLIC_URL}/`}
+          pagePath={`#about`}
           selectedButton={selectedButton}
         />
         <SidebarButton
           pageName="Projects"
-          pagePath={`${process.env.PUBLIC_URL}/projects`}
+          pagePath={`#projects`}
           selectedButton={selectedButton}
         />
         <SidebarButton
           pageName="Contact"
-          pagePath={`${process.env.PUBLIC_URL}/contact`}
+          pagePath={`#contact`}
           selectedButton={selectedButton}
         />
       </div>
-
-      <div className="sidebar-language"></div>
     </div>
   );
 };

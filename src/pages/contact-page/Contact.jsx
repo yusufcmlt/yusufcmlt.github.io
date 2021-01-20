@@ -33,7 +33,7 @@ const Contact = () => {
 
   const { name, email, messageSent } = userMessage;
   return (
-    <div className="contact-page-container">
+    <div id="contact" className="contact-page-container">
       <h2>Let's Get in Touch!</h2>
       <div className="contact-form-container">
         <div className="contact-form-sidebar">

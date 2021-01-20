@@ -7,48 +7,28 @@ import About from "./pages/about-page/About";
 import Projects from "./pages/projects-page/Projects";
 import Contact from "./pages/contact-page/Contact";
 
-const App = ({ history }) => {
-  const [selectedPage, setSelectedPage] = useState("");
+const App = () => {
+  const [pagePos, setPagePos] = useState(0);
 
   useEffect(() => {
-    //setting a selected page for background and selected buttons
-    const pagePath = history.location.pathname
-      .replace(process.env.PUBLIC_URL, "")
-      .slice(1);
-    setSelectedPage(pagePath);
-    //changing background color according to selected page
-    const indexBackground = document.querySelector("html");
-    indexBackground.setAttribute(
-      "class",
-      `background-${selectedPage ? selectedPage : "about"}`
-    );
-  });
+    const onScroll = (e) => {
+      setPagePos(e.target.documentElement.scrollTop);
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div className="App">
-      <SidebarHeader
-        selectedButton={selectedPage ? selectedPage : "about"}
-      ></SidebarHeader>
+      <SidebarHeader selectedButton={pagePos}></SidebarHeader>
       <div className="route-content-container">
-        <Switch>
-          <Route exact path={`${process.env.PUBLIC_URL}/`} component={About} />
-          <Route
-            path={`${process.env.PUBLIC_URL}/projects`}
-            component={Projects}
-          />
-          <Route
-            path={`${process.env.PUBLIC_URL}/contact`}
-            component={Contact}
-          />
-          <Route
-            render={() => (
-              <Redirect to={`${process.env.PUBLIC_URL}/projects`} />
-            )}
-          />
-        </Switch>
+        <About />
+        <Projects />
+        <Contact />
       </div>
     </div>
   );
 };
 
-export default withRouter(App);
+export default App;

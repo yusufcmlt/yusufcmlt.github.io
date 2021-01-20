@@ -1,0 +1,42 @@
+.skill-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 4vw;
+  height: 4vw;
+  background-color: white;
+  padding: 1.2vw;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: -0px 0px 5px 1px rgba(156, 155, 155, 0.35);
+  transition-duration: 0.1s;
+  cursor: default;
+  animation: fadeInAnimation 0.2s backwards;
+  @media (max-width: 800px) {
+    width: 13vw;
+    height: 13vw;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    .skill-icon {
+      filter: none;
+    }
+  }
+
+  .skill-icon {
+    width: 90%;
+    height: auto;
+    @media (max-width: 800px) {
+      width: 80%;
+    }
+  }
+  .skill-text {
+    font-size: 0.8vw;
+    font-weight: 500;
+    @media (max-width: 800px) {
+      font-size: 2vw;
+    }
+  }
+}

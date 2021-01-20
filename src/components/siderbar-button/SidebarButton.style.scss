@@ -1,9 +1,9 @@
 .sidebar-button {
-  width: 85%;
-  height: 65px;
+  width: 20vw;
+  height: 6.5vh;
   text-decoration: none;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 1.3vw;
   display: flex;
   margin: 20px 0;
   align-items: center;
@@ -15,17 +15,16 @@
 
   @media (max-width: 800px) {
     align-self: center;
-    width: 30vw;
+    width: 33vw;
     height: 75%;
-
     font-size: 14px;
-    margin: 0 5px;
+    margin: 0;
   }
 
   &:hover {
     box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.068);
     @media (max-width: 800px) {
-      border-radius: 2px;
+      border-radius: 5px;
     }
     &.about {
       color: #3828a1;
