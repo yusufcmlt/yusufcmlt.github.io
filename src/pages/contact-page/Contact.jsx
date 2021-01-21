@@ -35,13 +35,14 @@ const Contact = () => {
   return (
     <div id="contact" className="contact-page-container">
       <h2>Let's Get in Touch!</h2>
+      <p>
+        You can reach me using the links below or simply filling the contact
+        form! (I'm not sure how you can contact me using github.)
+      </p>
       <div className="contact-form-container">
         <div className="contact-form-sidebar">
           <h3>Contact</h3>
-          <p>
-            You can reach me using the links below or simply filling the contact
-            form!
-          </p>
+
           <div className="contact-links-container">
             <a
               href="https://github.com/yusufcmlt"

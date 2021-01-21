@@ -3,10 +3,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   margin-left: 50px;
+
   @media (max-width: 800px) {
     align-items: flex-start;
+    margin-left: 0;
+    padding-top: 75px;
   }
 
   h1 {
@@ -14,31 +16,35 @@
     margin: 20px 0 0 0;
     font-weight: 700;
     @media (max-width: 800px) {
-      font-size: 20px;
+      font-size: 6vw;
       margin: 20px 0 10px 10px;
     }
   }
   p {
-    font-size: 20px;
-    color: #777777;
+    font-size: 1vw;
+    color: #afabcc;
     font-weight: 500;
     margin: 20px 0 20px 0;
 
     @media (max-width: 800px) {
-      font-size: 12px;
-      margin: 10px 0 20px 10px;
+      font-size: 3vw;
+      margin: 10px 0 50px 10px;
     }
   }
   .projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 50vw;
-    min-height: 85vh;
-    justify-content: center;
+    grid-template-rows: 1fr;
+    width: 100%;
     row-gap: 15px;
 
-    @media (max-width: 800px) {
-      flex-direction: column;
+    & :nth-child(1),
+    & :nth-child(3) {
+      &.project-item-container {
+        flex-direction: row;
+        @media (max-width: 800px) {
+          flex-direction: column-reverse;
+        }
+      }
     }
   }
 }

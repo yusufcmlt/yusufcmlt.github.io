@@ -26,14 +26,14 @@ const projectList = [
     tags: ["NodeMCU", "Firebase", "React", "Hooks"],
   },
   {
-    title: "FreeCodeCamp Front End Projects",
+    title: "freeCodeCamp Front End Projects",
     image: freecodecampImg,
     links: {
       github: "https://github.com/yusufcmlt/freecodecamp-projects",
       web: "https://github.com/yusufcmlt/freecodecamp-projects",
     },
     text:
-      "Projects that i've done as a part of FreeCodeCamp front-end developer curriculum. Pomodoro clock, calculator, drum machine, markdown editor and random quote apps.",
+      "Projects that i've done as a part of freeCodeCamp front-end developer curriculum. Pomodoro clock, calculator, drum machine, markdown editor and random quote apps.",
     tags: ["React", "FreeCodeCamp", "Hooks"],
   },
   {

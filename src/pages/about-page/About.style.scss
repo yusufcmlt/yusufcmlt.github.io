@@ -21,9 +21,9 @@
 
   @media (max-width: 800px) {
     margin-left: 0;
-
+    height: 100vh;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: justify;
 
     h1 {
@@ -37,8 +37,7 @@
     animation: fadeInAnimation 0.5s backwards;
     animation-delay: 0.5s;
     @media (max-width: 800px) {
-      margin-top: 20px;
-      margin-bottom: 50px;
+      margin-top: 10px;
       line-height: 1.5;
       font-size: 13vw;
     }
@@ -48,16 +47,22 @@
     &.about-name {
       animation-delay: 1s;
       font-size: 1.7vw;
+      font-weight: 500;
       @media (max-width: 800px) {
-        font-size: 4vw;
+        font-size: 5vw;
       }
     }
+
     font-size: 1.2vw;
-    width: 55vw;
+    width: 45vw;
     margin: 20px 0 15px 0;
-    line-height: 1.5;
+    line-height: 1.8;
     animation: fadeInAnimation 0.5s backwards;
     animation-delay: 2.5s;
+
+    &.skills-description {
+      animation-delay: 4s;
+    }
 
     @media (max-width: 800px) {
       margin: 0;
@@ -69,77 +74,71 @@
     }
     .about-job {
       font-weight: 600;
+      color: #3828a1;
     }
-    .skills-container {
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 10px;
-      justify-items: auto;
-      max-width: 70%;
-      height: 90%;
-      flex-direction: row;
-      flex-wrap: wrap;
-      @media (max-width: 800px) {
-        max-width: 100%;
-        height: 50%;
-        justify-items: center;
-        column-gap: 0;
-      }
 
-      & :nth-child(1) {
-        animation-delay: 4s;
-      }
-      & :nth-child(2) {
-        animation-delay: 4.5s;
-      }
-      & :nth-child(3) {
-        animation-delay: 5s;
-      }
-      & :nth-child(4) {
-        animation-delay: 5.5s;
-      }
-      & :nth-child(5) {
-        animation-delay: 6s;
-      }
-      & :nth-child(6) {
-        animation-delay: 6.5s;
-      }
-      & :nth-child(7) {
-        animation-delay: 7s;
-      }
-      & :nth-child(8) {
-        animation-delay: 7.5s;
+    .design-passion-image {
+      position: absolute;
+      right: 20%;
+      top: 50%;
+      width: 300px;
+      display: none;
+    }
+    .passion-link {
+      cursor: pointer;
+      color: #3828a1;
+      &:hover {
+        & ~ .design-passion-image {
+          display: unset;
+          opacity: 0.7;
+        }
       }
     }
   }
-  .about-name {
-    font-size: 35px;
-    font-weight: 500;
+
+  .skills-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 50%;
     @media (max-width: 800px) {
-      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 200px;
+      width: 75%;
+      height: 20%;
+      justify-items: center;
+      column-gap: 0;
+    }
+
+    & :nth-child(1) {
+      animation-delay: 4s;
+    }
+    & :nth-child(2) {
+      animation-delay: 4.3s;
+    }
+    & :nth-child(3) {
+      animation-delay: 4.6s;
+    }
+    & :nth-child(4) {
+      animation-delay: 4.9s;
+    }
+    & :nth-child(5) {
+      animation-delay: 5.2s;
+    }
+    & :nth-child(6) {
+      animation-delay: 5.5s;
+    }
+    & :nth-child(7) {
+      animation-delay: 5.8s;
+    }
+    & :nth-child(8) {
+      animation-delay: 6.1s;
     }
   }
 
-  .typing-p {
-    padding: 5px;
-    font-size: 25px;
-    font-family: "Source Code Pro", monospace;
-    background-color: #3828a1;
-    color: white;
-  }
   p {
     font-size: 20px;
-  }
-
-  .projects-link {
-    padding: 1px 5px;
-    font-weight: 600;
-    color: #f98704;
-    border-radius: 2px;
-    text-decoration: none;
-    @media (max-width: 800px) {
-      margin: 10px 0 0px 0;
-    }
   }
 }
