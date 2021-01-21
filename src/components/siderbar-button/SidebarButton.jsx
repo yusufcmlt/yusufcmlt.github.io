@@ -9,7 +9,7 @@ const SidebarButton = ({ pagePath, pageName, selectedButton }) => {
     const buttonsPage = document.getElementById(pageName.toLowerCase());
 
     setButtonSelected(
-      selectedButton >= buttonsPage.offsetTop - buttonsPage.offsetHeight / 2 &&
+      selectedButton >= buttonsPage.offsetTop - buttonsPage.offsetHeight / 3 &&
         selectedButton < buttonsPage.offsetTop + buttonsPage.offsetHeight / 2
     );
   });
