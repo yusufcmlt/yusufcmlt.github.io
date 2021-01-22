@@ -1,5 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
+import "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBev9S7hzYO2KnaZJLNPWLwND5yC00qXRo",
@@ -36,6 +37,7 @@ export const createNewContactMessage = async (contactObj) => {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const analytics = firebase.analytics();
 
 export const firestore = firebase.firestore();
 export default firebase;
