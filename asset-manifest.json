@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ba100ef.chunk.css",
-    "main.js": "/static/js/main.7ff57534.chunk.js",
-    "main.js.map": "/static/js/main.7ff57534.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7e5277c5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7e5277c5.js.map",
-    "static/js/2.b4cd1876.chunk.js": "/static/js/2.b4cd1876.chunk.js",
-    "static/js/2.b4cd1876.chunk.js.map": "/static/js/2.b4cd1876.chunk.js.map",
-    "static/js/3.89830269.chunk.js": "/static/js/3.89830269.chunk.js",
-    "static/js/3.89830269.chunk.js.map": "/static/js/3.89830269.chunk.js.map",
+    "main.css": "/static/css/main.38dd06c0.chunk.css",
+    "main.js": "/static/js/main.f3c31b1a.chunk.js",
+    "main.js.map": "/static/js/main.f3c31b1a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ee898bdb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ee898bdb.js.map",
+    "static/js/2.7b4462cf.chunk.js": "/static/js/2.7b4462cf.chunk.js",
+    "static/js/2.7b4462cf.chunk.js.map": "/static/js/2.7b4462cf.chunk.js.map",
+    "static/js/3.72c21198.chunk.js": "/static/js/3.72c21198.chunk.js",
+    "static/js/3.72c21198.chunk.js.map": "/static/js/3.72c21198.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5ba100ef.chunk.css.map": "/static/css/main.5ba100ef.chunk.css.map",
-    "static/js/2.b4cd1876.chunk.js.LICENSE.txt": "/static/js/2.b4cd1876.chunk.js.LICENSE.txt",
+    "static/css/main.38dd06c0.chunk.css.map": "/static/css/main.38dd06c0.chunk.css.map",
+    "static/js/2.7b4462cf.chunk.js.LICENSE.txt": "/static/js/2.7b4462cf.chunk.js.LICENSE.txt",
     "static/media/SidebarButton.style.scss": "/static/media/projects.e7c39562.svg",
     "static/media/cizim-oyunu1.d3e02457.png": "/static/media/cizim-oyunu1.d3e02457.png",
     "static/media/ecommerce.205c9579.png": "/static/media/ecommerce.205c9579.png",
     "static/media/freecodecamp-gif.71c37278.gif": "/static/media/freecodecamp-gif.71c37278.gif",
-    "static/media/Contact.style.scss": "/static/media/github-button.aa0b6136.png",
-    "static/media/nodemcu.deda9cda.png": "/static/media/nodemcu.deda9cda.png",
+    "static/media/Contact.style.scss": "/static/media/hackerrank-logo.2e8b6e19.png",
+    "static/media/nodemcu.c75865be.png": "/static/media/nodemcu.c75865be.png",
     "static/media/redux-logo.c3bdca24.png": "/static/media/redux-logo.c3bdca24.png",
     "static/media/ProjectItem.style.scss": "/static/media/web-logo.16d10c2d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7e5277c5.js",
-    "static/js/2.b4cd1876.chunk.js",
-    "static/css/main.5ba100ef.chunk.css",
-    "static/js/main.7ff57534.chunk.js"
+    "static/js/runtime-main.ee898bdb.js",
+    "static/js/2.7b4462cf.chunk.js",
+    "static/css/main.38dd06c0.chunk.css",
+    "static/js/main.f3c31b1a.chunk.js"
   ]
 }
