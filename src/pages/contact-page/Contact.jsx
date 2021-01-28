@@ -12,7 +12,10 @@ const Contact = () => {
 
   const handleFormChange = (event) => {
     const { name, value } = event.target;
-    setUserMessage({ ...userMessage, [name]: value });
+    setUserMessage({
+      ...userMessage,
+      [name]: value,
+    });
   };
 
   const handleFormSubmit = async (event) => {
@@ -34,10 +37,10 @@ const Contact = () => {
   const { name, email, messageSent } = userMessage;
   return (
     <div id="contact" className="contact-page-container">
-      <h2>Let's Get in Touch!</h2>
-      <p>
+      <h2 className="section-h2">Let's Get in Touch!</h2>
+      <p className="section-h2-subtitle">
         You can reach me using the links below or simply filling the contact
-        form! (I'm not sure how you can contact me using github.)
+        form!
       </p>
       <div className="contact-form-container">
         <div className="contact-form-sidebar">
@@ -55,6 +58,14 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/yusufcemalt/"
               className="contact-link linkedin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {""}
+            </a>
+            <a
+              href="https://www.hackerrank.com/yusufcmlt"
+              className="contact-link hackerrank"
               target="_blank"
               rel="noreferrer"
             >

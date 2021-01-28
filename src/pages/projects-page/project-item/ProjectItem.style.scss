@@ -4,12 +4,15 @@
   align-items: center;
   justify-content: space-around;
   width: 75%;
-  height: 30vh;
+  height: 25vh;
   margin: 0;
   cursor: default;
   transition-duration: 0.3s;
   overflow: hidden;
   filter: opacity(0.9);
+  background-color: white;
+  box-shadow: 1px 1px 15px 1px rgba(156, 155, 155, 0.35);
+  border-radius: 10px;
 
   @media (max-width: 800px) {
     width: 100%;
@@ -17,6 +20,7 @@
     flex-direction: column-reverse;
     box-shadow: 1px 1px 15px 1px rgba(156, 155, 155, 0.35);
     margin-bottom: 20px;
+    border-radius: 2px;
   }
   &:hover {
     filter: opacity(1);
@@ -111,7 +115,7 @@
       }
     }
     .project-text {
-      font-size: 0.65vw;
+      font-size: 0.75vw;
       font-weight: 500;
       margin: 10px 0 0 0;
       @media (max-width: 800px) {

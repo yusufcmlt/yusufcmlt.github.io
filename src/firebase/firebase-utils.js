@@ -3,19 +3,21 @@ import "firebase/firestore";
 import "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBev9S7hzYO2KnaZJLNPWLwND5yC00qXRo",
-  authDomain: "portofolio-db.firebaseapp.com",
-  databaseURL: "https://portofolio-db.firebaseio.com",
-  projectId: "portofolio-db",
-  storageBucket: "portofolio-db.appspot.com",
-  messagingSenderId: "738947011764",
-  appId: "1:738947011764:web:ee6e8491482a32df0873e1",
-  measurementId: "G-Q1YVQ4VG9P",
+  apiKey: process.env.REACT_APP_PORTFOLIO_API_KEY,
+  authDomain: process.env.REACT_APP_PORTFOLIO_AUTHDOMAIN,
+  databaseURL: process.env.REACT_APP_PORTFOLIO_DATABASEURL,
+  projectId: process.env.REACT_APP_PORTFOLIO_PROCJECTID,
+  storageBucket: process.env.REACT_APP_PORTFOLIO_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_PORTFOLIO_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_PORTFOLIO_APPID,
+  measurementId: process.env.REACT_APP_PORTFOLIO_MEASUREMENTID,
 };
 
 export const createNewContactMessage = async (contactObj) => {
   //New or existing messages reference
-  const contactRef = firestore.collection("contactMessages").doc();
+  const contactRef = firestore
+    .collection(process.env.REACT_APP_PORTFOLIO_MESSAGE_COLLECTION)
+    .doc();
 
   //Getting message snapshot.
   const snapShot = await contactRef.get();
@@ -35,6 +37,16 @@ export const createNewContactMessage = async (contactObj) => {
   return contactRef;
 };
 
+export const deleteMessage = (messageID) => {
+  firestore
+    .collection(process.env.REACT_APP_PORTFOLIO_MESSAGE_COLLECTION)
+    .doc(messageID)
+    .delete()
+    .then(() => {
+      alert("Message Deleted");
+    })
+    .catch((error) => alert("Can not remove message"));
+};
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const analytics = firebase.analytics();
