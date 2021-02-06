@@ -71,6 +71,14 @@ const Contact = () => {
             >
               {""}
             </a>
+            <a
+              href="mailto:6ziyv3vuq@relay.firefox.com"
+              className="contact-link gmail"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {""}
+            </a>
           </div>
         </div>
         <div className="contact-form-content">

@@ -7,12 +7,12 @@ const SidebarHeader = ({ selectedButton }) => {
       <div className="sidebar-buttons-container">
         <SidebarButton
           pageName="About"
-          pagePath={`#about`}
+          pagePath={`#top`}
           selectedButton={selectedButton}
         />
         <SidebarButton
           pageName="Projects"
-          pagePath={`#projects`}
+          pagePath="#projects"
           selectedButton={selectedButton}
         />
         <SidebarButton

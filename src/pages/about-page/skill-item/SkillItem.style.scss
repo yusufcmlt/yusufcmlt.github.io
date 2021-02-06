@@ -14,8 +14,8 @@
   cursor: default;
   animation: fadeInAnimation 0.2s backwards;
   @media (max-width: 800px) {
-    width: 10vw;
-    height: 10vw;
+    width: 11vw;
+    height: 11vw;
   }
 
   &:hover {
@@ -37,7 +37,7 @@
     font-weight: 500;
     margin-top: 5px;
     @media (max-width: 800px) {
-      font-size: 2vw;
+      font-size: 2.2vw;
     }
   }
 }

@@ -88,9 +88,11 @@
           &.linkedin {
             background-image: url("../../assets/links-logo/linkedin-logo.png");
           }
-
           &.hackerrank {
             background-image: url("../../assets/links-logo/hackerrank-logo.png");
+          }
+          &.gmail {
+            background-image: url("../../assets/links-logo/gmail-button.png");
           }
           &:hover {
             transform: scale(1.05);

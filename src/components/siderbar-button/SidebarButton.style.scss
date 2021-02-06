@@ -22,18 +22,17 @@
   }
 
   &:hover {
-    box-shadow: -0px 0px 5px 1px rgba(156, 155, 155, 0.35);
-    @media (max-width: 800px) {
-      border-radius: 5px;
-    }
     &.about {
       color: #3828a1;
+      border: 2px solid #3828a13b;
     }
     &.projects {
       color: #f98704;
+      border: 2px solid #f987043b;
     }
     &.contact {
       color: #7ad851;
+      border: 2px solid #7ad8513b;
     }
   }
 

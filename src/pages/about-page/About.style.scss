@@ -25,25 +25,25 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
-
-    h1 {
-      width: 85%;
-      text-align: left;
-    }
   }
   h1 {
     font-size: 3vw;
     margin: 0;
     animation: fadeInAnimation 0.5s backwards;
     animation-delay: 0.5s;
+    color: #1d1452;
     @media (max-width: 800px) {
       margin-top: 10px;
       line-height: 1.5;
       font-size: 13vw;
+      width: 90%;
+      text-align: left;
     }
   }
 
   .description-p {
+    color: #6f6d80;
+    font-weight: 500;
     &.about-name {
       animation-delay: 1s;
       font-size: 1.7vw;
@@ -66,11 +66,11 @@
 
     @media (max-width: 800px) {
       margin: 0;
-      width: 85%;
+      width: 90%;
       font-size: 3.3vw;
       line-height: 1.5;
       padding: 15px 0;
-      font-weight: 300;
+      font-weight: 400;
     }
     .about-job {
       font-weight: 600;
