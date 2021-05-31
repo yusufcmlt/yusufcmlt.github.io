@@ -1,38 +1,40 @@
 .sidebar-button {
-  width: 20vw;
-  height: 6.5vh;
+  width: 150px;
+  height: 45px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.3vw;
   display: flex;
-  margin: 20px 0;
   align-items: center;
+  justify-content: center;
+  margin: auto 10px;
   color: black;
-  align-self: flex-start;
+  font-weight: 600;
+  font-size: 14px;
   border-radius: 10px;
   transition-duration: 0.5s;
-  background-color: rgba(246, 245, 245, 0.404);
+
+  border: 1px solid transparent;
 
   @media (max-width: 800px) {
     align-self: center;
     width: 33vw;
     height: 75%;
     font-size: 14px;
-    margin: 0;
+    margin: 0 3px;
+    border-radius: 5px;
   }
 
   &:hover {
     &.about {
       color: #3828a1;
-      border: 2px solid #3828a13b;
+      border: 1px solid #3828a13b;
     }
     &.projects {
       color: #f98704;
-      border: 2px solid #f987043b;
+      border: 1px solid #f987043b;
     }
     &.contact {
       color: #7ad851;
-      border: 2px solid #7ad8513b;
+      border: 1px solid #7ad8513b;
     }
   }
 
@@ -40,7 +42,7 @@
     color: white;
 
     @media (max-width: 800px) {
-      border-radius: 2px;
+      border-radius: 5px;
     }
     &.about {
       background-color: #3828a1;
@@ -61,7 +63,8 @@
     background-size: cover;
     width: 30px;
     height: 30px;
-    margin: 0 10px;
+    margin: 0 5px;
+
     @media (max-width: 800px) {
       width: 23px;
       height: 23px;

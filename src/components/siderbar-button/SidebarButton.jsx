@@ -21,7 +21,7 @@ const SidebarButton = ({ pagePath, pageName, selectedButton }) => {
         buttonSelected ? "selected" : ""
       }`}
     >
-      <span className={`button-icon ${pageName.toLowerCase()}`}></span>
+      <span className={`button-icon ${pageName.toLowerCase()}`} />
       {pageName}
     </a>
   );

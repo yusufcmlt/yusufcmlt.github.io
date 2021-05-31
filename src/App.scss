@@ -17,7 +17,10 @@
     display: grid;
     grid-template-rows: 1fr 1.5fr 1fr;
     height: 100%;
+    margin-top: 75px;
     @media (max-width: 800px) {
+      margin-top: 0;
+      margin-bottom: 75px;
       width: 100%;
       grid-template-rows: 0.3fr 0.5fr 0.25fr;
       row-gap: 100px;
