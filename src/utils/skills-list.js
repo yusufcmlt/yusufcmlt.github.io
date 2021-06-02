@@ -9,7 +9,7 @@ const skillsList = [
   },
   {
     title: "Tools & Other",
-    list: ["Figma", "Firebase", "VSCODE", "GIT", "NPM"],
+    list: ["Figma", "Firebase", "VsCode", "GIT", "NPM"],
   },
   {
     title: "Work in Progress",
