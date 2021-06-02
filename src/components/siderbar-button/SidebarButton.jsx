@@ -14,16 +14,26 @@ const SidebarButton = ({ pagePath, pageName, selectedButton }) => {
     );
   });
 
+  function handleClickScroll() {
+    const buttonsPage = document.getElementById(pageName.toLowerCase());
+    const windowWidth = window.innerWidth;
+    if (windowWidth > 800) {
+      window.scrollTo(0, buttonsPage.offsetTop - 75);
+    } else {
+      window.scrollTo(0, buttonsPage.offsetTop);
+    }
+  }
+
   return (
-    <a
-      href={pagePath}
+    <button
+      onClick={handleClickScroll}
       className={`sidebar-button ${pageName.toLowerCase()} ${
         buttonSelected ? "selected" : ""
       }`}
     >
       <span className={`button-icon ${pageName.toLowerCase()}`} />
       {pageName}
-    </a>
+    </button>
   );
 };
 

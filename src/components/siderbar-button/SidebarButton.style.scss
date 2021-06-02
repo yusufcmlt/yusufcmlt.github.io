@@ -1,6 +1,6 @@
 .sidebar-button {
   width: 150px;
-  height: 45px;
+  height: 50px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -10,9 +10,11 @@
   font-weight: 600;
   font-size: 14px;
   border-radius: 10px;
-  transition-duration: 0.5s;
-
+  transition-duration: 0.3s;
+  font-family: inherit;
+  cursor: pointer;
   border: 1px solid transparent;
+  background-color: white;
 
   @media (max-width: 800px) {
     align-self: center;
@@ -29,8 +31,8 @@
       border: 1px solid #3828a13b;
     }
     &.projects {
-      color: #f98704;
-      border: 1px solid #f987043b;
+      color: #fbb224;
+      border: 1px solid rgba(251, 179, 36, 0.25);
     }
     &.contact {
       color: #7ad851;
@@ -48,7 +50,7 @@
       background-color: #3828a1;
     }
     &.projects {
-      background-color: #f98704;
+      background-color: #fbb224;
     }
     &.contact {
       background-color: #7ad851;
