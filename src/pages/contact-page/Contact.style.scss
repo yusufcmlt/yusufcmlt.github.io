@@ -1,9 +1,6 @@
 .contact-page-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
-
   @media (max-width: 800px) {
     margin-left: 0;
     padding-top: 75px;

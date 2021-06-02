@@ -1,14 +1,14 @@
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// @keyframes fadeInAnimation {
+//   0% {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 @keyframes passionAnimation {
   0% {
@@ -24,146 +24,151 @@
 }
 
 .about-page-container {
-  display: flex;
-  flex-direction: column;
-  //min-height: calc(100vh - 150px);
-  width: 75%;
-  align-items: flex-start;
-  margin: 0 auto;
-  margin-top: 35px;
-
-  @media (max-width: 800px) {
-    margin-top: 20px;
-    width: unset;
-    margin-left: 0;
-    //min-height: 100vh;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: justify;
-  }
-  h1 {
-    font-size: 50px;
-    margin: 0;
-    animation: fadeInAnimation 0.5s backwards;
-    animation-delay: 0.5s;
-    color: #fff;
+  width: 100%;
+  .title-container {
     background-color: #3828a1;
-    padding: 5px;
-    width: 100%;
-    margin-bottom: 25px;
-
-    @media (max-width: 800px) {
-      text-align: left;
-      text-indent: 15px;
+    h1 {
+      font-size: 50px;
+      animation: fadeInAnimation 0.5s backwards;
+      animation-delay: 0.5s;
+      color: #fff;
+      width: 75%;
+      margin: 0 auto;
+      @media (max-width: 800px) {
+        width: 90%;
+      }
     }
   }
 
-  .description-p {
-    color: #6f6d80;
-    font-weight: 500;
-    &.about-name {
-      animation-delay: 1s;
-      font-size: 22px;
-      font-weight: 500;
-    }
-
-    font-size: 18px;
-    width: 45vw;
-    margin: 20px 0 15px 0;
-    line-height: 1.8;
-    animation: fadeInAnimation 0.5s backwards;
-    animation-delay: 2.5s;
-
-    &.skills-description {
-      animation-delay: 4s;
-    }
-
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 150px);
+    width: 75%;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 35px;
     @media (max-width: 800px) {
-      margin: 0;
-      width: 90%;
-      font-size: 16px;
-      line-height: 1.5;
-      padding: 15px 0;
-      font-weight: 400;
-    }
-    .about-job {
-      font-weight: 600;
-      color: #3828a1;
+      margin-top: 20px;
+      width: unset;
+      margin-left: 0;
+      //min-height: 100vh;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: justify;
     }
 
-    .design-passion-image {
-      position: absolute;
-      right: 20%;
-      top: 50%;
-      width: 15vw;
-      display: none;
-      animation: passionAnimation 0.5s infinite;
-    }
-    .passion-link {
-      cursor: pointer;
-      color: #3828a1;
-      &:hover,
-      &:active {
-        & ~ .design-passion-image {
-          display: unset;
-          opacity: 1;
-          @media (max-width: 800px) {
-            right: 50px;
-            top: 80px;
-            width: 150px;
+    .description-p {
+      color: #636172;
+      font-weight: 500;
+      &.about-name {
+        animation-delay: 1s;
+        font-size: 22px;
+        font-weight: 500;
+      }
+      font-size: 18px;
+      width: 45vw;
+      margin: 20px 0 15px 0;
+      line-height: 1.8;
+      animation: fadeInAnimation 0.5s backwards;
+      animation-delay: 2.5s;
+
+      &.skills-description {
+        animation-delay: 4s;
+      }
+
+      @media (max-width: 800px) {
+        margin: 0;
+        width: 90%;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 15px 0;
+        font-weight: 400;
+      }
+      .about-job {
+        font-weight: 600;
+        color: #3828a1;
+      }
+
+      .design-passion-image {
+        position: absolute;
+        right: 20%;
+        top: 50%;
+        width: 15vw;
+        display: none;
+        animation: passionAnimation 0.5s infinite;
+      }
+      .passion-link {
+        cursor: pointer;
+        color: #3828a1;
+        &:hover,
+        &:active {
+          & ~ .design-passion-image {
+            display: unset;
+            opacity: 1;
+            @media (max-width: 800px) {
+              right: 50px;
+              top: 80px;
+              width: 150px;
+            }
           }
         }
       }
     }
-  }
 
-  .skills-container {
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    animation: fadeInAnimation 0.5s backwards;
-    animation-delay: 4s;
-    & :nth-child(1) {
-      animation-delay: 4.2s;
-    }
-    & :nth-child(2) {
-      animation-delay: 4.4s;
-    }
-    & :nth-child(3) {
-      animation-delay: 4.6s;
-    }
-    & :nth-child(4) {
-      animation-delay: 4.8s;
-    }
-    .skill-block {
-      flex-basis: calc(50% - 1em);
-      h4 {
-        color: #3828a1;
+    .skills-container {
+      width: 100%;
+      margin-top: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      animation: fadeInAnimation 0.5s backwards;
+      animation-delay: 4s;
+      & :nth-child(1) {
+        animation-delay: 4.2s;
       }
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0 auto;
+      & :nth-child(2) {
+        animation-delay: 4.4s;
       }
-      @media (max-width: 1100px) {
-        flex-basis: 100%;
+      & :nth-child(3) {
+        animation-delay: 4.6s;
+      }
+      & :nth-child(4) {
+        animation-delay: 4.8s;
+      }
+      .skill-block {
+        flex-basis: calc(50% - 1em);
+        margin: 5px 0;
+        min-height: 160px;
+        background-color: rgba(56, 40, 161, 0.01);
+        h4 {
+          color: #3828a1;
+          text-indent: 10px;
+        }
         ul {
-          width: 100%;
+          width: 98%;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0;
+          margin: 0 auto;
+        }
+        @media (max-width: 1100px) {
+          flex-basis: 100%;
+          ul {
+            width: 100%;
+          }
         }
       }
+
+      @media (max-width: 800px) {
+        width: 90%;
+        justify-items: center;
+        column-gap: 0;
+      }
     }
 
-    @media (max-width: 800px) {
-      width: 90%;
-      justify-items: center;
-      column-gap: 0;
+    p {
+      font-size: 20px;
     }
-  }
-
-  p {
-    font-size: 20px;
   }
 }

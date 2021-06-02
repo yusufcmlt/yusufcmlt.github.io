@@ -36,7 +36,7 @@ const Contact = () => {
 
   const { name, email, messageSent } = userMessage;
   return (
-    <div id="contact" className="contact-page-container">
+    <section id="contact" className="contact-page-container">
       <h2 className="section-h2">Let's Get in Touch!</h2>
       <p className="section-h2-subtitle">
         You can reach me using the links below or simply filling the contact
@@ -116,7 +116,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
