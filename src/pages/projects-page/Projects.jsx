@@ -1,27 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.style.scss";
 
 import ProjectItem from "../projects-page/project-item/ProjectItem";
 import projectList from "../../utils/projects-list";
+import PopUpInfo from "./pop-up-info/PopUpInfo";
 
 const Projects = () => {
+  const [projectPopup, setProjectPopup] = useState({
+    toggle: false,
+    projectID: 0,
+  });
+
+  function handleProjectPopup(projectIndex = 0) {
+    const bodyElement = document.getElementsByTagName("BODY")[0];
+    if (!projectPopup.toggle) {
+      bodyElement.style.overflow = "hidden";
+    } else {
+      bodyElement.style.overflow = "visible";
+    }
+    setProjectPopup({ toggle: !projectPopup.toggle, projectID: projectIndex });
+  }
+
   return (
-    <div id="projects" className="projects-page-container">
-      <h2 className="section-h2">Projects</h2>
-      <p className="section-h2-subtitle">Some projects that i've worked on.</p>
-      <div className="projects-container">
-        {projectList.map((project, index) => (
-          <ProjectItem
-            key={index}
-            title={project.title}
-            image={project.image}
-            text={project.text}
-            links={project.links}
-            tags={project.tags}
-          />
-        ))}
-      </div>
-    </div>
+    <>
+      {projectPopup.toggle ? (
+        <PopUpInfo
+          handleProjectPopup={handleProjectPopup}
+          projectIndex={projectPopup.projectID}
+        />
+      ) : null}
+      <section id="projects" className="projects-page-container">
+        <div className="title-container">
+          <h1>
+            Works<span>Some projects i've worked on.</span>
+          </h1>
+        </div>
+        <div className="projects-content">
+          {projectList.map((project, index) => (
+            <ProjectItem
+              key={index}
+              projectIndex={index}
+              data={{ ...project }}
+              handleProjectPopup={handleProjectPopup}
+            />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

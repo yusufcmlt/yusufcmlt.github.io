@@ -1,40 +1,18 @@
 import React from "react";
 import "./ProjectItem.style.scss";
-const ProjectItem = ({ title, image, text, links, tags }) => {
+const ProjectItem = ({ data, handleProjectPopup, projectIndex }) => {
+  const { image, title } = data;
   return (
-    <div className="project-item-container">
-      <div className="project-info">
-        <div className="project-head">
-          <h3 className="project-title">{title}</h3>
-          <div className="project-links-container">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="project-link github"
-              href={links.github}
-            >
-              Github
-            </a>
-            <a
-              className="project-link web"
-              target="_blank"
-              rel="noreferrer"
-              href={links.web}
-            >
-              Web
-            </a>
-          </div>
-        </div>
-        <p className="project-text">{text}</p>
-        <div className="project-tags">
-          {tags.map((tag, index) => (
-            <span key={index + "a"} className="tag">
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
-      <img className="project-image" src={image} alt="project" />
+    <div
+      onClick={() => {
+        handleProjectPopup(projectIndex);
+      }}
+      className="project-item-container"
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      <span className="project-title-container">
+        <h5>{title}</h5>
+      </span>
     </div>
   );
 };

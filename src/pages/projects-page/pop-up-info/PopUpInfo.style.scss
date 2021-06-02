@@ -1,0 +1,124 @@
+.popup-background {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(136, 132, 132, 0.6);
+  z-index: 999;
+}
+.popup-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 55%;
+  min-height: 50%;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 1px rgb(82, 81, 81);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .close-popup {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-image: url("../../../assets/close.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .vid-container {
+    width: 90%;
+    height: 70%;
+    margin: 10px auto;
+  }
+  .info-container {
+    width: 90%;
+    height: 40%;
+    margin: 10px auto 20px auto;
+
+    .links-container {
+      width: 100%;
+      display: flex;
+
+      .link {
+        display: flex;
+        background-color: #fbb224;
+        color: #3828a1;
+        font-weight: 500;
+        flex-basis: 18%;
+        height: 35px;
+        margin-right: 10px;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #3828a1;
+      padding: 5px 0;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 500;
+      background-color: #f7f5f5;
+      padding: 15px 5px;
+      border-radius: 5px;
+    }
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: flex-end;
+      .tag {
+        background-color: #3828a1;
+        color: #fbb224;
+        font-size: 12px;
+        padding: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .popup-container {
+    width: 95%;
+
+    .vid-container {
+      width: 95%;
+      height: 40%;
+    }
+    .info-container {
+      height: 50%;
+      h2 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .links-container {
+        width: 100%;
+        justify-content: center;
+        .link {
+          flex-basis: 40%;
+        }
+      }
+    }
+  }
+}
