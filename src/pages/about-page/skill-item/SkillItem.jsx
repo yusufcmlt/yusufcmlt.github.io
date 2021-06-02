@@ -1,10 +1,11 @@
 import React from "react";
 import "./SkillItem.style.scss";
+import "./SkillIcons.style.scss";
 
-export const SkillItem = ({ name, icon }) => {
+export const SkillItem = ({ name }) => {
   return (
     <div className="skill-item-container">
-      <img className="skill-icon" src={icon} alt={name} />
+      <span className={`skill-icon ${name ? `icon-${name}` : null}`} />
       <span className="skill-text">{name}</span>
     </div>
   );

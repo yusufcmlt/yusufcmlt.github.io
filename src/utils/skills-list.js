@@ -1,45 +1,24 @@
-import adobeLogo from "../assets/skill-logos/adobexd-logo.png";
-import cssLogo from "../assets/skill-logos/css-logo.png";
-import firebaseLogo from "../assets/skill-logos/firebase-logo.png";
-import htmlLogo from "../assets/skill-logos/html-logo.png";
-import javascriptLogo from "../assets/skill-logos/javascript-logo.png";
-import nodeJsLogo from "../assets/skill-logos/nodejs-logo.png";
-import reactLogo from "../assets/skill-logos/react-logo.png";
-import reduxLogo from "../assets/skill-logos/redux-logo.png";
-
 const skillsList = [
   {
-    name: "HTML",
-    icon: htmlLogo,
+    title: "Languages",
+    list: ["CSS", "HTML", "Javascript"],
   },
   {
-    name: "CSS",
-    icon: cssLogo,
+    title: "Libraries,Frameworks",
+    list: ["React", "React-Router", "Bootstrap"],
   },
   {
-    name: "Javascript",
-    icon: javascriptLogo,
+    title: "Tools & Other",
+    list: ["Figma", "Firebase", "VSCODE", "GIT", "NPM"],
   },
   {
-    name: "React",
-    icon: reactLogo,
-  },
-  {
-    name: "Redux",
-    icon: reduxLogo,
-  },
-  {
-    name: "Firebase",
-    icon: firebaseLogo,
-  },
-  {
-    name: "Node.js",
-    icon: nodeJsLogo,
-  },
-  {
-    name: "Adobe Xd",
-    icon: adobeLogo,
+    title: "Work in Progress",
+    list: ["React-Redux", "SCSS", "Tailwind"],
   },
 ];
 
-export default skillsList;
+function randomNumber() {
+  return Math.ceil(Math.random() * 10000);
+}
+
+export { skillsList, randomNumber };

@@ -1,22 +1,22 @@
 import React from "react";
-import skillsList from "../../utils/skills-list";
+import { skillsList, randomNumber } from "../../utils/skills-list";
 import "./About.style.scss";
 import { SkillItem } from "./skill-item/SkillItem";
 
 const About = () => {
   return (
     <div id="about" className="about-page-container">
-      <h1>Hello!</h1>
+      <h1>Hi!</h1>
       <div className="description-p about-name">My name is Yusuf.</div>
       <div className="description-p">
-        I am a <span className="about-job">web developer / student </span>
+        I'm a <span className="about-job">web developer / student </span>
         located in Turkey. I love turning ideas into web products. I'm deeply
         focused on{" "}
         <span className="about-job ">front end web development </span>
         and
         <span className="passion-link">
           {" "}
-          working on sharpening my design skills.
+          currently working on my design skills.
         </span>{" "}
         <img
           src="https://i.kym-cdn.com/photos/images/newsfeed/001/018/899/936.jpg"
@@ -25,11 +25,18 @@ const About = () => {
         />
       </div>
       <div className="description-p skills-description">
-        I'm developing web apps using:
+        I'm creating web apps using:
       </div>
       <div className="skills-container">
-        {skillsList.map((skillItem, index) => (
-          <SkillItem name={skillItem.name} key={index} icon={skillItem.icon} />
+        {skillsList.map((category, index) => (
+          <div className="skill-block" key={category.title + index}>
+            <h4>{category.title}</h4>
+            <ul>
+              {category.list.map((skill, index) => (
+                <SkillItem name={skill} key={skill + index} />
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
     </div>

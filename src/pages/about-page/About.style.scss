@@ -24,33 +24,37 @@
 }
 
 .about-page-container {
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //min-height: calc(100vh - 150px);
+  width: 75%;
   align-items: flex-start;
-  margin-left: 50px;
+  margin: 0 auto;
+  margin-top: 35px;
 
   @media (max-width: 800px) {
+    margin-top: 20px;
+    width: unset;
     margin-left: 0;
-    height: 100vh;
+    //min-height: 100vh;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: justify;
   }
   h1 {
-    font-size: 3vw;
+    font-size: 50px;
     margin: 0;
     animation: fadeInAnimation 0.5s backwards;
     animation-delay: 0.5s;
-    color: #1d1452;
+    color: #fff;
+    background-color: #3828a1;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 25px;
+
     @media (max-width: 800px) {
-      margin-top: 10px;
-      line-height: 1.5;
-      font-size: 13vw;
-      width: 90%;
       text-align: left;
+      text-indent: 15px;
     }
   }
 
@@ -59,14 +63,11 @@
     font-weight: 500;
     &.about-name {
       animation-delay: 1s;
-      font-size: 1.7vw;
+      font-size: 22px;
       font-weight: 500;
-      @media (max-width: 800px) {
-        font-size: 5vw;
-      }
     }
 
-    font-size: 1.2vw;
+    font-size: 18px;
     width: 45vw;
     margin: 20px 0 15px 0;
     line-height: 1.8;
@@ -80,7 +81,7 @@
     @media (max-width: 800px) {
       margin: 0;
       width: 90%;
-      font-size: 3.3vw;
+      font-size: 16px;
       line-height: 1.5;
       padding: 15px 0;
       font-weight: 400;
@@ -117,44 +118,48 @@
   }
 
   .skills-container {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    width: 50%;
-    @media (max-width: 800px) {
-      margin-top: 30px;
-      margin-bottom: 200px;
-      width: 75%;
-      height: 20%;
-      justify-items: center;
-      column-gap: 0;
-    }
-
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: fadeInAnimation 0.5s backwards;
+    animation-delay: 4s;
     & :nth-child(1) {
-      animation-delay: 4s;
+      animation-delay: 4.2s;
     }
     & :nth-child(2) {
-      animation-delay: 4.3s;
+      animation-delay: 4.4s;
     }
     & :nth-child(3) {
       animation-delay: 4.6s;
     }
     & :nth-child(4) {
-      animation-delay: 4.9s;
+      animation-delay: 4.8s;
     }
-    & :nth-child(5) {
-      animation-delay: 5.2s;
+    .skill-block {
+      flex-basis: calc(50% - 1em);
+      h4 {
+        color: #3828a1;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto;
+      }
+      @media (max-width: 1100px) {
+        flex-basis: 100%;
+        ul {
+          width: 100%;
+        }
+      }
     }
-    & :nth-child(6) {
-      animation-delay: 5.5s;
-    }
-    & :nth-child(7) {
-      animation-delay: 5.8s;
-    }
-    & :nth-child(8) {
-      animation-delay: 6.1s;
+
+    @media (max-width: 800px) {
+      width: 90%;
+      justify-items: center;
+      column-gap: 0;
     }
   }
 
