@@ -18,7 +18,6 @@
 
   @media (max-width: 800px) {
     align-self: center;
-    width: 33vw;
     height: 75%;
     font-size: 14px;
     margin: 0 3px;
@@ -38,6 +37,10 @@
       color: #7ad851;
       border: 1px solid #7ad8513b;
     }
+    &.messages {
+      color: #d7654c;
+      border: 1px solid #d7654c3b;
+    }
   }
 
   &.selected {
@@ -54,6 +57,9 @@
     }
     &.contact {
       background-color: #7ad851;
+    }
+    &.messages {
+      background-color: #d7654c;
     }
 
     &:hover {
@@ -79,6 +85,9 @@
     }
     &.contact {
       background-image: url("../../assets/sidebar-logos/contact.svg");
+    }
+    &.messages {
+      background-image: url("../../assets/sidebar-logos/conversation.svg");
     }
   }
 }

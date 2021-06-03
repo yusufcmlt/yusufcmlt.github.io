@@ -59,7 +59,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SidebarHeader selectedButton={this.state.pagePos}></SidebarHeader>
+        <SidebarHeader
+          selectedButton={this.state.pagePos}
+          messagesAuth={this.state.messagesAuth}
+        />
         <div className="route-content-container">
           <About />
           <Projects />
