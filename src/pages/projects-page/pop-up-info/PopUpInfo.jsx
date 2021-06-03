@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import projectList from "../../../utils/projects-list";
+import { SkillItem } from "../../about-page/skill-item/SkillItem";
 
 import "./PopUpInfo.style.scss";
 
@@ -26,22 +27,26 @@ export default function PopUpInfo({ projectIndex, handleProjectPopup }) {
         <div className="info-container">
           <h2>{title}</h2>
           <div className="links-container">
-            <a
-              className="link github-link"
-              href={links.github}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
-            <a
-              className="link web-link"
-              href={links.web}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Web
-            </a>
+            <SkillItem name="Github">
+              <a
+                className="link github-link"
+                href={links.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {}
+              </a>
+            </SkillItem>
+            <SkillItem name="Web">
+              <a
+                className="link web-link"
+                href={links.web}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {}
+              </a>
+            </SkillItem>
           </div>
           <p>{text}</p>
           <div className="tags-container">

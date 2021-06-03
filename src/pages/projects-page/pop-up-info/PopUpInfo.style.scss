@@ -53,18 +53,15 @@
       width: 100%;
       display: flex;
 
-      .link {
-        display: flex;
+      .skill-item-container {
+        cursor: pointer;
+        position: relative;
         background-color: #fbb224;
-        color: #3828a1;
-        font-weight: 500;
-        flex-basis: 18%;
-        height: 35px;
-        margin-right: 10px;
-        border-radius: 5px;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
+        a {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+        }
       }
     }
 
