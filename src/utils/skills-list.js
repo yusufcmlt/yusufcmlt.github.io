@@ -13,7 +13,7 @@ const skillsList = [
   },
   {
     title: "Work in Progress",
-    list: ["React-Redux", "SCSS", "Tailwind"],
+    list: ["React-Redux", "SCSS", "Next.js", "Tailwind"],
   },
 ];
 
