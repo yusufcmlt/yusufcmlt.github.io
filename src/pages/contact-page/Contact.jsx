@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { createNewContactMessage } from "../../firebase/firebase-utils";
+import { SkillItem } from "../about-page/skill-item/SkillItem";
 
 import "./Contact.style.scss";
 
@@ -37,83 +38,71 @@ const Contact = () => {
   const { name, email, messageSent } = userMessage;
   return (
     <section id="contact" className="contact-page-container">
-      <h2 className="section-h2">Let's Get in Touch!</h2>
-      <p className="section-h2-subtitle">
-        You can reach me using the links below or simply filling the contact
-        form!
-      </p>
-      <div className="contact-form-container">
-        <div className="contact-form-sidebar">
-          <h3>Contact</h3>
-
-          <div className="contact-links-container">
-            <a
-              href="https://github.com/yusufcmlt"
-              className="contact-link github"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {""}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yusufcemalt/"
-              className="contact-link linkedin"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {""}
-            </a>
-            <a
-              href="https://www.hackerrank.com/yusufcmlt"
-              className="contact-link hackerrank"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {""}
-            </a>
+      <div className="title-container">
+        <h1>
+          Get in Touch!
+          <span>
+            You can reach me using the links below or simply filling the contact
+            form!
+          </span>
+        </h1>
+      </div>
+      <div className="contact-content">
+        <form className="contact-form" onSubmit={handleFormSubmit}>
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            value={name}
+            onChange={handleFormChange}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={email}
+            onChange={handleFormChange}
+            required
+          />
+          <textarea
+            placeholder="Your Message"
+            maxLength="500"
+            name="messageSent"
+            value={messageSent}
+            onChange={handleFormChange}
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+        <div className="contact-links-container">
+          <SkillItem name="Mail">
             <a
               href="mailto:6ziyv3vuq@relay.firefox.com"
-              className="contact-link gmail"
               target="_blank"
               rel="noreferrer"
             >
-              {""}
+              {}
             </a>
-          </div>
-        </div>
-        <div className="contact-form-content">
-          <form className="contact-form" onSubmit={handleFormSubmit}>
-            <input
-              type="text"
-              placeholder="Name"
-              className="email-name"
-              name="name"
-              value={name}
-              onChange={handleFormChange}
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="email-name"
-              name="email"
-              value={email}
-              onChange={handleFormChange}
-              required
-            />
-            <textarea
-              placeholder="Your Message"
-              className="text"
-              maxLength="500"
-              name="messageSent"
-              value={messageSent}
-              onChange={handleFormChange}
-              required
-            />
-            <button type="submit" className="contact-submit-button">
-              Send
-            </button>
-          </form>
+          </SkillItem>
+          <SkillItem name="Linkedin">
+            <a
+              href="https://www.linkedin.com/in/yusufcemalt/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {}
+            </a>
+          </SkillItem>
+          <SkillItem name="Github">
+            <a
+              href="https://github.com/yusufcmlt"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {}
+            </a>
+          </SkillItem>
         </div>
       </div>
     </section>
