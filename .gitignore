@@ -15,7 +15,9 @@ src/pages/messages-page
 
 # production
 /build
-/src/assets/project-vids
+
+/src/assets/
+/src/assets/links-logo
 
 # misc
 .DS_Store
