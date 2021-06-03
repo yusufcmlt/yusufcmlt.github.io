@@ -15,6 +15,7 @@ src/pages/messages-page
 
 # production
 /build
+/src/assets/project-vids
 
 # misc
 .DS_Store
