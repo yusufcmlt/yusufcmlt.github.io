@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/analytics";
+import swal from "sweetalert";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_PORTFOLIO_API_KEY,
@@ -43,9 +44,9 @@ export const deleteMessage = (messageID) => {
     .doc(messageID)
     .delete()
     .then(() => {
-      alert("Message Deleted");
+      swal({ title: "Message Deleted", icon: "success" });
     })
-    .catch((error) => alert("Can not remove message"));
+    .catch((error) => swal({ title: "Can't Delete Message", icon: "error" }));
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

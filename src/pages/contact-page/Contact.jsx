@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import swal from "sweetalert";
 import { createNewContactMessage } from "../../firebase/firebase-utils";
 import { SkillItem } from "../about-page/skill-item/SkillItem";
 
@@ -21,18 +22,35 @@ const Contact = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    try {
-      await createNewContactMessage(userMessage);
-      setUserMessage({
-        name: "",
-        email: "",
-        messageSent: "",
+    if (handleCheckForm()) {
+      try {
+        await createNewContactMessage(userMessage);
+        setUserMessage({
+          name: "",
+          email: "",
+          messageSent: "",
+        });
+        swal({ title: "Message Sent", icon: "success" });
+      } catch (error) {
+        swal({ title: "Failed to Send Message", icon: "error" });
+        console.log(error);
+      }
+    } else {
+      swal({
+        title: "Error",
+        text: "Please fill the form correctly :)",
+        icon: "error",
       });
-      alert("Message Sent!");
-    } catch (error) {
-      alert("There is an error sending your message.");
-      console.log(error);
     }
+  };
+
+  const handleCheckForm = () => {
+    for (const input in userMessage) {
+      if (!userMessage[input].trim()) {
+        return false;
+      }
+    }
+    return true;
   };
 
   const { name, email, messageSent } = userMessage;
@@ -49,6 +67,7 @@ const Contact = () => {
       </div>
       <div className="contact-content">
         <form className="contact-form" onSubmit={handleFormSubmit}>
+          <h2>Contact</h2>
           <input
             type="text"
             placeholder="Name"

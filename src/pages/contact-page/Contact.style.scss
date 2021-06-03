@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: stretch;
 
   .title-container {
     background-color: #7ad851;
@@ -25,7 +25,7 @@
   }
   .contact-content {
     width: 75%;
-    margin: 50px auto 0 auto;
+    margin: 0 auto 0 auto;
 
     .contact-form {
       width: 70%;
@@ -49,6 +49,13 @@
           outline: none;
         }
       }
+      h2 {
+        width: 70%;
+        margin: 0 auto;
+        border: none;
+        font-size: 22px;
+      }
+
       input {
         text-indent: 10px;
       }
@@ -66,6 +73,9 @@
         font-weight: 600;
         &:hover {
           background-color: #6ec748;
+        }
+        &:active {
+          transform: translateY(2px);
         }
       }
     }
