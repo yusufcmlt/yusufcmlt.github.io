@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import projectList from "../../../utils/projects-list";
 
 import "./PopUpInfo.style.scss";
@@ -6,10 +6,18 @@ import "./PopUpInfo.style.scss";
 export default function PopUpInfo({ projectIndex, handleProjectPopup }) {
   const { title, video, links, text, tags } = projectList[projectIndex];
 
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    window.requestAnimationFrame(() => {
+      setIsMounted(true);
+    });
+  }, []);
+
   return (
     <>
       <div className="popup-background" onClick={() => handleProjectPopup()} />
-      <div className="popup-container">
+      <div className={`popup-container ${isMounted ? "enter" : ""}`}>
         <button className="close-popup" onClick={() => handleProjectPopup()} />
         <video className="vid-container" autoPlay loop muted>
           <source src={video} type="video/mp4" />
