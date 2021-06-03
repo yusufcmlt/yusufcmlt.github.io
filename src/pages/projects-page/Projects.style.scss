@@ -1,14 +1,12 @@
 .projects-page-container {
   display: flex;
   flex-basis: 100%;
-  min-height: 75vh;
+  min-height: 100vh;
   flex-wrap: wrap;
-  margin-bottom: 150px;
+  align-content: flex-start;
   .title-container {
     background-color: #fbb224;
     h1 {
-      animation: fadeInAnimation 0.5s backwards;
-      animation-delay: 0.5s;
       color: #fff;
       font-size: 30px;
       width: 75%;
@@ -27,7 +25,7 @@
 
   .projects-content {
     width: 75%;
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,6 +42,9 @@
       h1 {
         margin-left: 5%;
         width: 95%;
+        span {
+          font-size: 12px;
+        }
       }
     }
     .projects-content {
