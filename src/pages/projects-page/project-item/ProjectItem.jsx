@@ -8,10 +8,13 @@ const ProjectItem = ({ data, handleProjectPopup, projectIndex }) => {
         handleProjectPopup(projectIndex);
       }}
       className="project-item-container"
-      style={{ backgroundImage: `url(${image})` }}
+      style={{
+        backgroundImage: `url(${image})`,
+      }}
     >
       <span className="project-title-container">
         <h5>{title}</h5>
+        <h5>View</h5>
       </span>
     </div>
   );
