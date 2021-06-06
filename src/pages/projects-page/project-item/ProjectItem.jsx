@@ -14,6 +14,7 @@ const ProjectItem = ({ data, handleProjectPopup, projectIndex }) => {
     >
       <span className="project-title-container">
         <h5>{title}</h5>
+        <hr />
         <h5>View</h5>
       </span>
     </div>
