@@ -20,9 +20,11 @@ export default function PopUpInfo({ projectIndex, handleProjectPopup }) {
       <div className="popup-background" onClick={() => handleProjectPopup()} />
       <div className={`popup-container ${isMounted ? "enter" : ""}`}>
         <button className="close-popup" onClick={() => handleProjectPopup()} />
-        <video className="vid-container" autoPlay loop muted>
-          <source src={video} type="video/mp4" />
-        </video>
+        <div className="vid-container">
+          <video autoPlay loop muted>
+            <source src={video} type="video/mp4" />
+          </video>
+        </div>
 
         <div className="info-container">
           <h2>{title}</h2>
