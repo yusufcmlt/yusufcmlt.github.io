@@ -1,7 +1,7 @@
 .project-item-container {
   display: flex;
   flex-basis: calc(30vw - 1em);
-  height: 28vh;
+  height: 32vh;
   background-color: #fff;
   margin: 10px 10px;
   box-shadow: 1px 1px 15px 1px rgba(156, 155, 155, 0.35);
@@ -63,12 +63,6 @@
   }
 }
 
-@media (max-width: 1600px) {
-  .project-item-container {
-    height: 25vh;
-  }
-}
-
 @media (max-width: 1200px) {
   .project-item-container {
     flex-basis: 75%;
@@ -79,6 +73,12 @@
 @media (max-width: 800px) {
   .project-item-container {
     flex-basis: 95%;
-    height: 25vh;
+    height: 30vh;
+  }
+}
+@media (max-width: 500px) {
+  .project-item-container {
+    flex-basis: 95%;
+    height: 27vh;
   }
 }

@@ -14,14 +14,16 @@
   transform: scale(0.5) translate(-50%, -50%);
   transition: transform 0.2s ease-out;
   background-color: white;
-  width: 55%;
+  min-width: 60%;
   min-height: 50%;
   z-index: 1000;
   border-radius: 10px;
   box-shadow: 1px 1px 15px 1px rgba(49, 49, 49, 0.75);
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 50px;
+
+  align-items: center;
 
   .close-popup {
     background-color: #ffffff;
@@ -42,14 +44,13 @@
     border: 1px solid #3828a1;
   }
   .vid-container {
-    width: 100%;
-    height: 70%;
+    width: 60%;
+    height: auto;
     margin: 0 auto 10px auto;
   }
   .info-container {
-    width: 90%;
-    height: 40%;
-    margin: 10px auto 20px auto;
+    flex-basis: 50%;
+    margin: 10px 30px;
 
     .links-container {
       width: 100%;
@@ -106,15 +107,35 @@
   transform: scale(1) translate(-50%, -50%);
 }
 
+@media (max-width: 1400px) {
+  .popup-container {
+    min-width: 70%;
+    min-height: 50%;
+    align-content: center;
+    padding: 10px;
+    .info-container {
+      flex-basis: 60%;
+    }
+
+    .vid-container {
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .popup-container {
     width: 95%;
+    min-height: 55%;
+    flex-wrap: wrap;
 
     .vid-container {
       width: 100%;
       height: 40%;
     }
     .info-container {
+      flex-basis: 100%;
       height: 50%;
       h2 {
         font-size: 16px;
