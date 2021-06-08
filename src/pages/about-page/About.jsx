@@ -42,6 +42,9 @@ const About = () => {
             </div>
           ))}
         </div>
+        <div className="description-p last">
+          You can check out some of my works below.
+        </div>
       </div>
     </section>
   );
