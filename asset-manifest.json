@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.96eefcfa.chunk.css",
-    "main.js": "/static/js/main.b4062e21.chunk.js",
-    "main.js.map": "/static/js/main.b4062e21.chunk.js.map",
+    "main.css": "/static/css/main.b2a869be.chunk.css",
+    "main.js": "/static/js/main.15b5e598.chunk.js",
+    "main.js.map": "/static/js/main.15b5e598.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d6070ff1.js",
     "runtime-main.js.map": "/static/js/runtime-main.d6070ff1.js.map",
     "static/js/2.7788a829.chunk.js": "/static/js/2.7788a829.chunk.js",
@@ -10,12 +10,12 @@
     "static/js/3.f9a03e7c.chunk.js": "/static/js/3.f9a03e7c.chunk.js",
     "static/js/3.f9a03e7c.chunk.js.map": "/static/js/3.f9a03e7c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.96eefcfa.chunk.css.map": "/static/css/main.96eefcfa.chunk.css.map",
+    "static/css/main.b2a869be.chunk.css.map": "/static/css/main.b2a869be.chunk.css.map",
     "static/js/2.7788a829.chunk.js.LICENSE.txt": "/static/js/2.7788a829.chunk.js.LICENSE.txt",
     "static/media/SidebarButton.style.scss": "/static/media/projects.e7c39562.svg",
     "static/media/cizim-oyunu1.d3e02457.png": "/static/media/cizim-oyunu1.d3e02457.png",
     "static/media/cizimoyunu.7486c358.mp4": "/static/media/cizimoyunu.7486c358.mp4",
-    "static/media/PopUpInfo.style.scss": "/static/media/close.50a567b6.svg",
+    "static/media/PopUpInfo.style.scss": "/static/media/spinner.df0ac33b.svg",
     "static/media/ecommerce.204ccc60.mp4": "/static/media/ecommerce.204ccc60.mp4",
     "static/media/ecommerce.be662040.png": "/static/media/ecommerce.be662040.png",
     "static/media/SkillIcons.style.scss": "/static/media/web-logo.53348e87.svg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.d6070ff1.js",
     "static/js/2.7788a829.chunk.js",
-    "static/css/main.96eefcfa.chunk.css",
-    "static/js/main.b4062e21.chunk.js"
+    "static/css/main.b2a869be.chunk.css",
+    "static/js/main.15b5e598.chunk.js"
   ]
 }
