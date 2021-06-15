@@ -13,8 +13,11 @@ src/pages/messages-page
 # testing
 /coverage
 
+
+.eslintcache
 # production
 /build
+
 
 /src/assets/
 /src/assets/links-logo
