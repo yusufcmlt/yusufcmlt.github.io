@@ -26,7 +26,11 @@
 .about-page-container {
   width: 100%;
   .title-container {
-    background-color: #3828a1;
+    background: linear-gradient(
+      240deg,
+      rgba(113, 62, 222, 1) 0%,
+      rgba(56, 40, 161, 1) 100%
+    );
     h1 {
       font-size: 50px;
       animation: fadeInAnimation 0.5s backwards;

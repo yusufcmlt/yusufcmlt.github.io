@@ -5,7 +5,12 @@
   flex-wrap: wrap;
   align-content: flex-start;
   .title-container {
-    background-color: #fbb224;
+    background: rgb(251, 178, 36);
+    background: linear-gradient(
+      240deg,
+      rgba(251, 178, 36, 1) 0%,
+      rgba(251, 120, 36, 1) 100%
+    );
     h1 {
       color: #fff;
       font-size: 30px;

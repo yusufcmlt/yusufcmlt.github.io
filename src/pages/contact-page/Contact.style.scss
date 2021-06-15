@@ -6,7 +6,12 @@
   align-content: stretch;
 
   .title-container {
-    background-color: #7ad851;
+    background: rgb(122, 216, 81);
+    background: linear-gradient(
+      149deg,
+      rgba(122, 216, 81, 1) 0%,
+      rgba(71, 198, 126, 1) 100%
+    );
     h1 {
       color: #fff;
       font-size: 25px;
