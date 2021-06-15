@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2a869be.chunk.css",
+    "main.css": "/static/css/main.8ac38992.chunk.css",
     "main.js": "/static/js/main.15b5e598.chunk.js",
     "main.js.map": "/static/js/main.15b5e598.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d6070ff1.js",
@@ -10,7 +10,7 @@
     "static/js/3.f9a03e7c.chunk.js": "/static/js/3.f9a03e7c.chunk.js",
     "static/js/3.f9a03e7c.chunk.js.map": "/static/js/3.f9a03e7c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b2a869be.chunk.css.map": "/static/css/main.b2a869be.chunk.css.map",
+    "static/css/main.8ac38992.chunk.css.map": "/static/css/main.8ac38992.chunk.css.map",
     "static/js/2.7788a829.chunk.js.LICENSE.txt": "/static/js/2.7788a829.chunk.js.LICENSE.txt",
     "static/media/SidebarButton.style.scss": "/static/media/projects.e7c39562.svg",
     "static/media/cizim-oyunu1.d3e02457.png": "/static/media/cizim-oyunu1.d3e02457.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.d6070ff1.js",
     "static/js/2.7788a829.chunk.js",
-    "static/css/main.b2a869be.chunk.css",
+    "static/css/main.8ac38992.chunk.css",
     "static/js/main.15b5e598.chunk.js"
   ]
 }
