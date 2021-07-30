@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.97776419.chunk.css",
-    "main.js": "/static/js/main.d7c24fcb.chunk.js",
-    "main.js.map": "/static/js/main.d7c24fcb.chunk.js.map",
+    "main.css": "/static/css/main.1c775e6f.chunk.css",
+    "main.js": "/static/js/main.df23ee38.chunk.js",
+    "main.js.map": "/static/js/main.df23ee38.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.34db2ca4.js",
     "runtime-main.js.map": "/static/js/runtime-main.34db2ca4.js.map",
     "static/js/2.60c07055.chunk.js": "/static/js/2.60c07055.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.eea75dad.chunk.js": "/static/js/3.eea75dad.chunk.js",
     "static/js/3.eea75dad.chunk.js.map": "/static/js/3.eea75dad.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.97776419.chunk.css.map": "/static/css/main.97776419.chunk.css.map",
+    "static/css/main.1c775e6f.chunk.css.map": "/static/css/main.1c775e6f.chunk.css.map",
     "static/js/2.60c07055.chunk.js.LICENSE.txt": "/static/js/2.60c07055.chunk.js.LICENSE.txt",
     "static/media/icon-sprites.92baf80a.svg": "/static/media/icon-sprites.92baf80a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.34db2ca4.js",
     "static/js/2.60c07055.chunk.js",
-    "static/css/main.97776419.chunk.css",
-    "static/js/main.d7c24fcb.chunk.js"
+    "static/css/main.1c775e6f.chunk.css",
+    "static/js/main.df23ee38.chunk.js"
   ]
 }
