@@ -1,0 +1,116 @@
+{
+  "data": [
+    {
+      "title": "React E-Commerce",
+      "links": {
+        "github": "https://github.com/yusufcmlt/react-ecommerce",
+        "web": "https://react-ecommerce-isyeri.web.app"
+      },
+      "text": "E-commerce app that is selling nuts. Created with React and Firebase. Users can list products,categories, buy products, use cart and manage addresses. Users can also manage products and categories as an admin. I've used React Context Api and Hooks for managing app state, React Router for routing. On the backend; i've used Firebase Firestore for database management and Firebase Storage for file management.",
+      "tags": ["React", "Context", "Firebase", "Hooks"],
+      "images": [
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/124327115-4091c280-db90-11eb-81c5-fefc1b194b42.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/127641219-3a8a4142-d160-47bf-9daa-9eeb5e4cb2b2.jpg"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/124327131-45ef0d00-db90-11eb-83bc-2b503bf757f6.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/127641222-e766df32-2f27-4c8d-a14e-e8ec76191274.jpg"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/124327134-4687a380-db90-11eb-8e63-4bc29064c73d.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/127641224-44355155-fee0-41bc-bbf2-592392c32c6a.jpg"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/124327136-47203a00-db90-11eb-8846-1d6b03ea469e.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/127641229-aaece177-8514-41a0-be35-82831d83dd4b.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Product Return Ticket System",
+      "links": {
+        "github": "https://github.com/yusufcmlt/product-return-service-app",
+        "web": "https://graduation-project-yusufcmlt.netlify.app/"
+      },
+      "text": "Product return ticket system app. Users can create and check status of their tickets. Admins can manage created tickets and change status of them. Created with React, React hook form,yup, Firebase and SASS.",
+      "tags": ["React", "React-Hook-Form", "SASS", "Firebase", "Yup", "Figma"],
+      "images": [
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/145692897-7ff8be4f-68ac-4e8e-b035-a1b4778cfd71.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/145694327-027c25b1-4ea4-47b7-b177-a045c7af554b.jpg"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/145694728-2ac00b6e-645e-4ed7-9197-09badd194d80.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/145694748-7e7aca3d-c805-40ce-8ed5-ca879800c024.jpg"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/145692896-755d6676-295c-4fff-906f-ade595b77b6a.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/145694321-c8be63f5-5ca4-4c84-bfea-2f5a1801b564.jpg"
+        },
+
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/145694729-16248342-cd6b-4887-a7e1-048e3af4a976.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/145694747-c9406bb4-a9fd-434d-ad35-8003890d8e29.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Multiplayer Pictionary Game",
+      "links": {
+        "github": "https://github.com/yusufcmlt/cizim-oyunu",
+        "web": "http://cizimoyunu.github.io"
+      },
+      "text": "A web based multiplayer game that players try to guess each other's drawings. Players can create game rooms and others can join randomly on permission or with a key. I've used Socket.io for communication, React for UI, p5.js for drawing and Firebase Realtime Database for config database.",
+      "tags": ["React", "SocketIO", "Firebase", "Hooks", "p5.js"],
+      "images": [
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/124323851-a2e7c480-db8a-11eb-936d-acd61f801144.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/124323851-a2e7c480-db8a-11eb-936d-acd61f801144.png"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/124323855-a4b18800-db8a-11eb-9a97-4fc9ab47ba54.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/124323855-a4b18800-db8a-11eb-9a97-4fc9ab47ba54.png"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/124323856-a4b18800-db8a-11eb-9561-21f3b044cea2.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/124323856-a4b18800-db8a-11eb-9561-21f3b044cea2.png"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/124323857-a54a1e80-db8a-11eb-9e41-7e571dd720ef.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/124323857-a54a1e80-db8a-11eb-9e41-7e571dd720ef.png"
+        }
+      ]
+    },
+
+    {
+      "id": "freecodecamp",
+      "title": "Patika React Bootcamp Projects",
+      "links": {
+        "github": "https://github.com/yusufcmlt/patika-react-bootcamp",
+        "web": "https://github.com/yusufcmlt/patika-react-bootcamp"
+      },
+      "text": "Front end projects (homeworks) that i've completed in React bootcamp by Innovance - Patika.dev. Money transfer, food search, country list, simple board game and realtime chat apps.",
+      "tags": ["React", "Firebase", "Realtime Messaging", "SASS", "APIs"],
+      "images": [
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/145692890-7cf977dc-c96b-4ced-a02d-6cd9b36b48ff.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/145694520-d780f050-cb1b-4002-b20a-3af1937c5d55.jpg"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/145692889-779d2070-a1ea-438a-af1b-45525af0f2e5.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/145694519-9c480a83-0da5-4536-9572-420f74d29041.jpg"
+        },
+
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/145692899-2a19ea0a-6142-4c33-9c05-1d9bdde7ee7d.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/145694521-4d72d32b-3e44-45c0-a554-95397258f96a.jpg"
+        },
+        {
+          "link": "https://user-images.githubusercontent.com/58252790/145694706-9631af16-6365-4313-8cc3-4b53b61c4b3a.png",
+          "thumbnail": "https://user-images.githubusercontent.com/58252790/145694711-82f1493a-1434-404a-9c14-4d4a2dbc98ab.jpg"
+        }
+      ]
+    }
+  ]
+}
